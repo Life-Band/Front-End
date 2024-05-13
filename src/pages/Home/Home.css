@@ -1,0 +1,339 @@
+/*  Home Global Styles */
+.home {
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.header {
+  position: absolute;
+}
+
+/*  Inicio da Pagina Home */
+
+.home-initial {
+  width: 100%;
+  height: 100%;
+  background: url("../../assets/HomeAssets/background-inicio.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+.initial-info h2 {
+  font-size: 3rem;
+  text-align: left;
+  max-width: 600px;
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+  font-weight: 250;
+}
+
+.bracelet-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 18.75rem;
+  height: 5rem;
+  background: #fff;
+  border: none;
+  border-radius: 50px;
+  margin-top: 8rem;
+}
+
+.bracelet-btn span {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.3rem;
+  color: #050505;
+}
+
+.bracelet-btn img {
+  width: 13%;
+  margin-bottom: 0.35rem;
+}
+
+.initial-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3rem;
+}
+
+.signup-btn {
+  margin: 3rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 14.375rem;
+  height: 4rem;
+  background: #fff;
+  border: none;
+  border-radius: 50px;
+  color: #050505;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.signup-btn:hover {
+  border: 1px solid #fff;
+  background: rgba(255, 255, 255, 0.105);
+  color: #fff;
+  /* transform: scale(1.1); */
+}
+
+/*  Sobre Nós da Pagina Home */
+
+.home-about {
+  width: 100%;
+  height: 100%;
+  background: url("../../assets/HomeAssets/background-about.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.about-container {
+  background: #d9d9d910;
+  width: 90%;
+  margin-bottom: 5rem;
+  border-radius: 16px;
+}
+
+.about-title h2 {
+  font-size: 60px;
+  font-weight: 200;
+  margin: 25px 0 0 0;
+}
+
+.about-texts {
+  display: flex;
+  text-align: justify;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.text-divisor {
+  position: relative;
+  background: #ffffff50;
+  width: 2px;
+  height: 10rem;
+}
+
+.about-text {
+  font-size: 1.3rem;
+  font-weight: 300;
+  max-width: 45%;
+  line-height: normal;
+  padding: 1rem;
+}
+
+/*  Vantagens da Pagina Home */
+
+.home-benefit {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  color: #050505;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-benefit h2 {
+  margin-top: 5%;
+  font-size: 2.3rem;
+  font-weight: 300;
+}
+
+.benefit-cards {
+  display: flex;
+  column-gap: 5rem;
+  margin: auto;
+}
+
+.benefit-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.benefit-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #1e0e60;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.benefit-card h4 {
+  padding: 1.5rem 0 0 0;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.benefit-card p {
+  padding: 10px 2rem 2rem 2rem;
+  max-width: 400px;
+  color: #fff;
+}
+
+/*  Depoimentos da Pagina */
+
+.home-feedback {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background: #1e0e60;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-image: url("../../assets/FeedbackAssets/PatternFundo.png");
+}
+
+.feedbackWave1 {
+  width: 100%;
+  position: absolute;
+  top: -28%;
+  transform: rotate(180deg);
+}
+
+.feedbackWave2 {
+  position: absolute;
+  bottom: -25%;
+}
+
+.home-feedback .imageContainer {
+  width: 40%;
+  height: 50%;
+  border-radius: 50px;
+  object-fit: cover;
+  background: url("../../assets/FeedbackAssets/feedbackImg.png");
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+
+  transition: all 0.4s ease-in-out;
+}
+
+.home-feedback .imageContainer:hover {
+  background: url("../../assets/FeedbackAssets/Depoimentos.png");
+  background-position: center;
+  background-size: cover;
+  transform: scale(1.05);
+}
+
+.texts-feedback h2 {
+  font-size: 3rem;
+}
+
+.texts-feedback p {
+  margin-top: 5rem;
+  max-width: 350px;
+}
+
+/* ServicesCard */
+
+.Container-Service {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+}
+
+/* Serviços da Pagina Home */
+
+.home-services {
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+
+.services-title {
+  font-weight: 300;
+  font-size: 3.5rem;
+  color: black;
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+
+/*  Media Querys */
+
+@media screen and (max-width: 1920px) {
+}
+
+@media screen and (max-width: 1368px) {
+  .initial-info {
+    margin-top: 100px;
+  }
+  .initial-info h2 {
+    font-size: 2.5rem;
+    text-align: left;
+    max-width: 650px;
+  }
+  .signup-btn {
+    position: absolute;
+    bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .bracelet-btn {
+    width: 14.75rem;
+    height: 4rem;
+  }
+  .bracelet-btn span {
+    font-size: 1rem;
+  }
+  .bracelet-btn img {
+    width: 12%;
+  }
+  .initial-info h2 {
+    font-size: 2.8rem;
+    max-width: 470px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .bracelet-btn {
+    position: absolute;
+    width: 14.75rem;
+    height: 4rem;
+    top: 16%;
+    right: -1%;
+    border-radius: 50px 0 0 50px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .bracelet-btn {
+    position: absolute;
+    width: 11.75rem;
+    height: 3.4rem;
+    top: 23%;
+    right: -1%;
+    border-radius: 50px 0 0 50px;
+  }
+  .home-initial {
+    background: url("../../assets/HomeAssets/background-inicio-mobile.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .initial-info h2 {
+    font-size: 2rem;
+    text-align: left;
+    max-width: 900px;
+  }
+}

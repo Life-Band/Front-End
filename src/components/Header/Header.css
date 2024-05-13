@@ -1,0 +1,296 @@
+header {
+  width: 94%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 0 0 0;
+  margin: 0 auto;
+}
+
+header a {
+  text-decoration: none;
+  color: #fff;
+}
+
+header h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header h1 a {
+  max-height: 44px;
+  max-width: 52px;
+}
+
+.logo {
+  width: 100%;
+  filter: brightness(0) invert(1);
+}
+
+.logo:hover {
+  filter: brightness(1) invert(0);
+}
+
+header span {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+header span a {
+  color: #fff;
+
+  transition: color 0.4s ease-in-out;
+}
+
+header span a:hover {
+  color: #6cabff;
+}
+
+header button {
+  border: 1px solid transparent;
+  font-size: 1.5em;
+  background-color: transparent;
+  cursor: pointer;
+  transition: color 0.4s ease-in-out;
+}
+
+header button:hover {
+  color: #6cabff;
+}
+
+.left-elements {
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.right-elements {
+  margin-right: 1rem;
+  display: flex;
+  gap: 40px;
+}
+
+.header-pages {
+  display: flex;
+  align-items: center;
+  padding-left: 7rem;
+  column-gap: 8vw;
+}
+
+.inputBoxOff {
+  display: none;
+}
+
+.inputBoxOn {
+  display: block;
+  position: relative;
+}
+
+.inputIndexOn {
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 24px;
+  padding: 1rem 1rem;
+}
+
+.inputIndexOn::placeholder {
+  color: #fff;
+  font-size: 1rem;
+}
+
+#btn-Close {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin-right: 10px;
+  font-size: 1rem;
+
+  animation: content 3s linear forwards;
+}
+
+.divisor i {
+  display: none;
+}
+
+.divisor {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95%;
+  height: 40px;
+  border-radius: 20px 20px 0 0;
+  background: #c9c9c9;
+}
+
+.divisorOpen {
+  background: rgba(255, 255, 255, 0.38);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(17.1px);
+  -webkit-backdrop-filter: blur(17.1px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95%;
+  height: 40px;
+  border-radius: 20px 20px 0 0;
+  animation: openMenu 0.15s linear forwards;
+}
+
+#close-divisor {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 2rem 2.1rem;
+  font-size: 1.4rem;
+  /* animation: content 0.15s linear forwards;*/
+   animation: closeMenu 5s linear forwards;
+}
+
+.closeMenu {
+  animation: closeMenu 5s linear forwards;
+} 
+
+.socialIconOff {
+  display: none;
+}
+
+.socialIcons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  position: absolute;
+  bottom: 8px;
+  font-size: 42px;
+  gap: 5rem;
+  margin-bottom: 0rem;
+  opacity: 0;
+  animation: none;
+  animation: content 1s ease-in-out forwards;
+}
+
+.socialIcons svg {
+  margin-top: 10px;
+}
+
+.socialIcons a {
+  color: #fff;
+  transition: color 0.4s ease-in-out;
+}
+
+.socialIcons a:hover {
+  color: #003f92;
+}
+
+.menuTextOff {
+  display: none;
+}
+
+.menuText {
+  line-height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.3rem;
+  margin-right: 10px;
+  opacity: 0;
+  gap: 40px;
+  animation: content 1s ease-in-out forwards;
+}
+
+.menuText a {
+  transition: color 0.4s ease-in-out;
+}
+
+.menuText a:hover {
+  color: #003f92;
+}
+
+@keyframes content {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes content {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes openMenu {
+  100% {
+    height: 95%;
+  }
+}
+@keyframes closeMenu {
+  100% {
+    height: 0%;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  header h1 a {
+    max-height: 44px;
+  }
+  .logo {
+    width: 100%;
+  }
+  .header-pages {
+    padding-left: 5rem;
+    column-gap: 6vw;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  header h1 a {
+    max-height: 35.19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .header-pages {
+    padding-left: 4rem;
+    column-gap: 4vw;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .header-pages {
+    display: none;
+  }
+  #lupa {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .inputIndex {
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 24px;
+    padding: 1rem 1rem;
+    margin: 0 1rem 0 0;
+    display: none;
+  }
+  .inputBoxOn {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 20px 20px 0 0;
+  }
+}
