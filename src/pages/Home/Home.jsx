@@ -25,7 +25,7 @@ function Home(props) {
           </button>
         </div>
 
-        <a href="http://localhost:5173/cadastro">
+        <a href="/cadastro">
           <button className="signup-btn">Cadastre-se</button>
         </a>
       </section>
