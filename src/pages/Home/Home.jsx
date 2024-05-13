@@ -143,7 +143,11 @@ function Home(props) {
             description="Nossa plataforma oferece uma aba de orientações e recursos vitais para situações emergenciais."
             title="Primeiros Socorros"
           />
-
+          <Services
+            icons={Pulseira}
+            description="A pulseira tecnológica envia sinais de socorro para um responsável escolhido pelo usuário da pulseira"
+            title="Pulseira"
+          />
         </div>
       </section>
       <Footer />
