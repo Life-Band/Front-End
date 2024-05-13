@@ -25,7 +25,7 @@ function Home(props) {
           </button>
         </div>
 
-        <a href="/cadastro">
+        <a href="https://life-band.vercel.app/cadastro">
           <button className="signup-btn">Cadastre-se</button>
         </a>
       </section>
