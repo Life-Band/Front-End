@@ -2,12 +2,11 @@
 .home {
   width: 100%;
   height: 100%;
-  overflow: scroll;
   overflow-x: hidden;
-}
-
-.header {
-  position: absolute;
+  background: #1e0e60;
+  background-size: cover;
+  background-position: bottom;
+  background-image: url(../../assets/FooterAssets/Fundo.png);
 }
 
 /*  Inicio da Pagina Home */
@@ -82,7 +81,6 @@
   border: 1px solid #fff;
   background: rgba(255, 255, 255, 0.105);
   color: #fff;
-  /* transform: scale(1.1); */
 }
 
 /*  Sobre Nós da Pagina Home */
@@ -282,10 +280,6 @@
     text-align: left;
     max-width: 650px;
   }
-  .signup-btn {
-    position: absolute;
-    bottom: 50px;
-  }
 }
 
 @media screen and (max-width: 1150px) {
@@ -310,7 +304,7 @@
     position: absolute;
     width: 14.75rem;
     height: 4rem;
-    top: 16%;
+    top: 6%;
     right: -1%;
     border-radius: 50px 0 0 50px;
   }
@@ -321,7 +315,6 @@
     position: absolute;
     width: 11.75rem;
     height: 3.4rem;
-    top: 23%;
     right: -1%;
     border-radius: 50px 0 0 50px;
   }
@@ -333,7 +326,18 @@
   }
   .initial-info h2 {
     font-size: 2rem;
-    text-align: left;
-    max-width: 900px;
+    position: absolute;
+    bottom: 220px;
+    left: 25px;
+    font-weight: 600;
+  }
+  .signup-btn {
+    position: absolute;
+    width: 90%;
+    margin: 0;
+    border-radius: 15px;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }

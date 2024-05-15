@@ -129,7 +129,7 @@ header button:hover {
 }
 
 .divisorOpen {
-  background: rgba(255, 255, 255, 0.38);
+  background: rgba(255, 255, 255, 0.18);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(17.1px);
@@ -146,6 +146,7 @@ header button:hover {
   height: 40px;
   border-radius: 20px 20px 0 0;
   animation: openMenu 0.15s linear forwards;
+  z-index: 10;
 }
 
 #close-divisor {
@@ -155,12 +156,12 @@ header button:hover {
   padding: 2rem 2.1rem;
   font-size: 1.4rem;
   /* animation: content 0.15s linear forwards;*/
-   animation: closeMenu 5s linear forwards;
+  animation: closeMenu 5s linear forwards;
 }
 
 .closeMenu {
   animation: closeMenu 5s linear forwards;
-} 
+}
 
 .socialIconOff {
   display: none;
@@ -172,7 +173,7 @@ header button:hover {
   justify-content: center;
   border: 1px solid transparent;
   position: absolute;
-  bottom: 8px;
+  bottom: 50px;
   font-size: 42px;
   gap: 5rem;
   margin-bottom: 0rem;
@@ -292,5 +293,23 @@ header button:hover {
     left: 50%;
     transform: translateX(-50%);
     border-radius: 20px 20px 0 0;
+  }
+  .menuText {
+    font-size: 1rem;
+    animation: content 1s ease-in-out forwards;
+  }
+  .socialIcons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    position: absolute;
+    bottom: 50px;
+    font-size: 30px;
+    gap: 5rem;
+    margin-bottom: 0rem;
+    opacity: 0;
+    animation: none;
+    animation: content 1s ease-in-out forwards;
   }
 }
