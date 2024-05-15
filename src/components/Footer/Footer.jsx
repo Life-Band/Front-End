@@ -16,7 +16,7 @@ function Footer() {
           </a>
         </button>
         <button>
-          <a href="https://linktr.ee/LifeBand_?utm_source=linktree_admin_share">
+          <a href="https://beacons.ai/lifeband">
             <i class="fa-solid fa-link"></i>
           </a>
         </button>
