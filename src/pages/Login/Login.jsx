@@ -4,14 +4,15 @@ import Logo from "../../assets/LoginAssets/Logo.png";
 import FirstKit from "../../assets/LoginAssets/FirstKit.png";
 import Arrow from "../../assets/LoginAssets/Seta.png";
 import EyeSlash from "../../assets/LoginAssets/Eye-Slash.png";
+import {Link} from "react-router-dom"
 
 function Login() {
   return (
     <main className="main-container">
       <div className="container">
-        <a href="http://localhost:5173">
+        <Link to="/">
           <img className="logo-login" src={Logo} alt="Imagem do Logo " />
-        </a>
+        </Link>
         <h2>Bem-vindo</h2>
         <h4>de volta</h4>
         <img className="first-kit" src={FirstKit} alt="Imagem do Kit" />

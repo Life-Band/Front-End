@@ -9,8 +9,15 @@ import Calendar from "../../assets/ServicesAssets/IconeAgenda.png";
 import IconeCoracao from "../../assets/ServicesAssets/IconedoCard.png";
 import Pulseira from "../../assets/ServicesAssets/IconePulseira.png";
 import Footer from "../../components/Footer/Footer";
+import { useNavigate } from "react-router-dom";
+
 
 function Home(props) {
+  const navigate = useNavigate();
+  const redictButton = () => {
+  navigate('/Cadastro')
+}
+
   return (
     <main className="home">
       <section className="home-initial">
@@ -26,7 +33,7 @@ function Home(props) {
         </div>
 
         <a href="http://localhost:5173/cadastro">
-          <button className="signup-btn">Cadastre-se</button>
+          <button className="signup-btn" onClick={redictButton}>Cadastre-se</button>
         </a>
       </section>
 

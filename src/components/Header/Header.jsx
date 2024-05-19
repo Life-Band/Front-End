@@ -1,6 +1,8 @@
 import "./Header.css";
 import Logo from "../../assets/HeaderAssets/Logo.png";
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+
 
 function Header(teste) {
   const [click, setClick] = useState("divisor");
@@ -85,7 +87,7 @@ function Header(teste) {
 
         <nav className={menuText}>
           <h2>
-            <a href="http://localhost:5173/login">Login</a>
+            <Link to="/Login">Login</Link>
           </h2>
           <h2>
             <a href="#">Home</a>

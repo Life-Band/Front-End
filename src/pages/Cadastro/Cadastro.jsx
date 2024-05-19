@@ -1,19 +1,24 @@
-import React from "react";
+
+import { redirect } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
+
 import "./Cadastro.css";
 
 const Cadastro = () => {
+  const navigate = useNavigate();
+  
   return (
     <>
       <div className="container-cadastro">
         <div className="Card-Left">
           <div className="card-title">
-            <a href="http://localhost:5173">
+            <Link to="/" >
               <img
                 className="logo-cadastro"
                 src="src\assets\CadastroAssets\Logo.png"
                 alt=""
               />
-            </a>
+            </Link>
             <h4 className="cadastro-title">Bem-vindo à </h4>
             <h2 className="nome-title">
               Life&nbsp; <span className="band-style">Band</span>
