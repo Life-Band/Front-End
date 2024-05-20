@@ -11,12 +11,11 @@ import Pulseira from "../../assets/ServicesAssets/IconePulseira.png";
 import Footer from "../../components/Footer/Footer";
 import { useNavigate } from "react-router-dom";
 
-
 function Home(props) {
   const navigate = useNavigate();
   const redictButton = () => {
-    navigate('/Cadastro')
-}
+    navigate("/Cadastro");
+  };
 
   return (
     <main className="home">
@@ -32,9 +31,9 @@ function Home(props) {
           </button>
         </div>
 
-        <a href="">
-          <button className="signup-btn" onClick={redictButton}>Cadastre-se</button>
-        </a>
+        <button className="signup-btn" onClick={redictButton}>
+          Cadastre-se
+        </button>
       </section>
 
       <section className="home-about">
