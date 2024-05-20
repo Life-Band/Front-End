@@ -31,10 +31,7 @@ function Home(props) {
             <span>+{props.cadastros} Pessoas Ativas</span>
           </button>
         </div>
-
-        <a href="http://localhost:5173/cadastro">
           <button className="signup-btn" onClick={redictButton}>Cadastre-se</button>
-        </a>
       </section>
 
       <section className="home-about">
