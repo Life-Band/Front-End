@@ -1,3 +1,5 @@
+
+import PropTypes from 'prop-types';
 import "./Home.css";
 import Header from "../../components/Header/Header";
 import Bracelet from "../../assets/HomeAssets/pulseira.png";
@@ -51,7 +53,7 @@ function Home(props) {
                 processos de triagem e admissão mais suaves, aliviando a
                 ansiedade dos pacientes e familiares. Com isso, a empresa elevou
                 o padrão de qualidade no cuidado médico urgente, garantindo uma
-                experiência mais tranquila e sem complicações.
+                experiência mais tranquila e sem complicações.
               </p>
             </div>
             <div className="about-text">
@@ -62,7 +64,7 @@ function Home(props) {
                 rápido e seguro aos dados necessários para o atendimento. Com
                 essa combinação de eficiência operacional e tecnologia avançada,
                 os hospitais terão um atendimento personalizado e de excelência,
-                focado no rápido atendimento dos pacientes.
+                focado no rápido atendimento dos pacientes.
               </p>
             </div>
           </div>
@@ -112,7 +114,7 @@ function Home(props) {
         >
           <path
             fill="#ffffff"
-            fill-opacity="1"
+            fillOpacity="1"
             d="M0,64L60,64C120,64,240,64,360,69.3C480,75,600,85,720,96C840,107,960,117,1080,117.3C1200,117,1320,107,1380,101.3L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
           ></path>
         </svg>
@@ -131,7 +133,7 @@ function Home(props) {
         >
           <path
             fill="#ffffff"
-            fill-opacity="1"
+            fillOpacity="1"
             d="M0,64L60,64C120,64,240,64,360,69.3C480,75,600,85,720,96C840,107,960,117,1080,117.3C1200,117,1320,107,1380,101.3L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
           ></path>
         </svg>
@@ -160,5 +162,9 @@ function Home(props) {
     </main>
   );
 }
+
+Home.propTypes = {
+  cadastros: PropTypes.number.isRequired,
+};
 
 export default Home;
