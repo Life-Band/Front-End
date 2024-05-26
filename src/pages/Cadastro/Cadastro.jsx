@@ -1,19 +1,21 @@
-import { Link } from "react-router-dom";
-import Arrow from "../../assets/CadastroAssets/arrow-right.png";
-import Logo from "../../assets/CadastroAssets/Logo.png";
-import Estetoscopio from "../../assets/CadastroAssets/Estetoscopio.png";
+
+import { redirect } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
+
 import "./Cadastro.css";
 
 const Cadastro = () => {
+  const navigate = useNavigate();
+  
   return (
     <>
       <div className="container-cadastro">
         <div className="Card-Left">
           <div className="card-title">
-            <Link to="/">
+            <Link to="/" >
               <img
                 className="logo-cadastro"
-                src={Logo}
+                src="src\assets\CadastroAssets\Logo.png"
                 alt=""
               />
             </Link>
@@ -24,7 +26,7 @@ const Cadastro = () => {
           </div>
           <img
             className="Estetoscopio-img"
-            src={Estetoscopio}
+            src="src\assets\CadastroAssets\Estetoscopio.png"
             alt=""
           />
         </div>
@@ -32,11 +34,8 @@ const Cadastro = () => {
         <div className="Card-Right">
           <div className="signup-title">
             <h2 className="signup-Text">Cadastro</h2>
-            <a
-              href="https://life-band-3a73e.web.app/login"
-              className="arrow"
-            >
-              <img src={Arrow} />
+            <a href="http://localhost:5173/login">
+              <img src="src\assets\CadastroAssets\arrow-right.png" alt="" />
             </a>
           </div>
 

@@ -1,0 +1,96 @@
+#root {
+  overflow-x: hidden;
+}
+
+main.pulseira {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  position: relative;
+  background: url("../../assets/PulseiraAssets/BG.jpg");
+
+  background-size: cover;
+  background-position: bottom;
+}
+
+.pulseira-header {
+  z-index: 1000;
+  display: none;
+}
+
+h1.pulseira {
+  margin-top: 100px;
+}
+
+.paragrafo-pulseira {
+  color: #fff;
+  margin: 50px;
+  font-size: 130%;
+  font-weight: 100;
+}
+
+.pulseira-imagem1 {
+  width: 280px;
+  margin-bottom: 200px;
+}
+
+.pulseira2 {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 300px;
+}
+
+.pulseira-imagem2 {
+  width: 700px;
+  height: 1000px;
+  object-fit: cover;
+  margin-right: 100px;
+}
+
+.text-pulseira2 {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: justify;
+  gap: 30px;
+}
+
+.title-pulseira2 {
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+
+.paragrafo-pulseira2 {
+  font-weight: 200;
+  font-size: 1.5rem;
+}
+
+.pulseira3 {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-bottom: 200px;
+}
+
+.pulseira3-texts {
+  display: flex;
+  flex-direction: column;
+  gap: 295px;
+  text-align: left;
+  font-size: 2rem;
+  list-style: none;
+}
+
+.pulseira-imagem3 {
+  width: 600px;
+  object-fit: cover;
+}
+
+.pulseira-imagem4 {
+  top: 0;
+  width: 100%;
+  object-fit: cover;
+}
