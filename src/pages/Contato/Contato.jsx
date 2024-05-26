@@ -41,13 +41,13 @@ function Contato() {
         <h2>Siga nossas redes sociais</h2>
 
         <div className="social-links">
-          <a href="#">
+          <a href="https://www.linkedin.com/company/life-band/">
             <i class="fa-brands fa-linkedin"></i> <h3>Linkedin</h3>
           </a>
-          <a href="#">
+          <a href="https://github.com/Life-Band">
             <i class="fa-brands fa-github"></i> <h3>GitHub</h3>
           </a>
-          <a href="#">
+          <a href="https://www.instagram.com/lifeband.proa/">
             <i class="fa-brands fa-instagram"></i> <h3>Instagram</h3>
           </a>
         </div>
