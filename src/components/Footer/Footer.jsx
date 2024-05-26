@@ -1,5 +1,6 @@
 import "./Footer.css";
 import Logo from "../../assets/FooterAssets/Logo.png";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 function Footer() {
   return (
@@ -26,20 +27,20 @@ function Footer() {
         <div className="text-container">
           <div className="footer-container">
             <h2>MAPA DO SITE</h2>
-            <h4>Inicio</h4>
-            <h4>Sobre Nós</h4>
-            <h4>Vantagens</h4>
-            <h4>Depoimentos</h4>
-            <h4>Serviços</h4>
+            <a href="#inicio">Inicio</a>
+            <a href="#sobre">Sobre Nós</a>
+            <a href="#vantagens">Vantagens</a>
+            <a href="#depoimentos">Depoimentos</a>
+            <a href="#servicos">Serviços</a>
           </div>
           <div className="footer-container">
             <h2>CONTATO</h2>
-            <h4>Contatos</h4>
-            <h4>Social Media</h4>
+            <a href="#">Contatos</a>
+            <a href="#">Social Media</a>
           </div>
           <div className="footer-container">
             <h2>VÍDEOS</h2>
-            <h4>Conteúdo</h4>
+            <a href="#">Conteúdo</a>
           </div>
         </div>
         <div className="form-father">

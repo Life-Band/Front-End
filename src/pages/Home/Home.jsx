@@ -19,7 +19,7 @@ function Home(props) {
 
   return (
     <main className="home">
-      <section className="home-initial">
+      <section className="home-initial" id="inicio">
         <Header use="visible" className="header" />
 
         <div className="initial-info">
@@ -36,7 +36,7 @@ function Home(props) {
         </button>
       </section>
 
-      <section className="home-about">
+      <section className="home-about" id="sobre">
         <div className="about-container">
           <div className="about-title">
             <h2>Sobre nós</h2>
@@ -68,7 +68,8 @@ function Home(props) {
           </div>
         </div>
       </section>
-      <section className="home-benefit">
+
+      <section className="home-benefit" id="vantagens">
         <h2>Vantagens</h2>
 
         <div className="benefit-cards">
@@ -104,7 +105,8 @@ function Home(props) {
           </div>
         </div>
       </section>
-      <section className="home-feedback">
+
+      <section className="home-feedback" id="depoimentos">
         <svg
           className="feedbackWave1"
           xmlns="http://www.w3.org/2000/svg"
@@ -136,7 +138,8 @@ function Home(props) {
           ></path>
         </svg>
       </section>
-      <section className="home-services">
+
+      <section className="home-services" id="servicos">
         <h2 className="services-title">Serviços</h2>
         <div className="Container-Service">
           <Services
@@ -156,6 +159,7 @@ function Home(props) {
           />
         </div>
       </section>
+
       <Footer />
     </main>
   );

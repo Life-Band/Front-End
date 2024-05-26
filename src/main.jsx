@@ -5,6 +5,7 @@ import App from "./App.jsx";
 import Login from "./pages/Login/Login";
 import Cadastro from "./pages/Cadastro/Cadastro";
 import Pulseira from "./pages/Pulseira/Pulseira";
+import Contato from "./pages/Contato/Contato.jsx";
 import "./index.css";
 
 const router = createBrowserRouter([
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
   {
     path: "pulseira",
     element: <Pulseira />,
+  },
+  {
+    path: "contato",
+    element: <Contato />,
   },
 ]);
 

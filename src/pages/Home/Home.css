@@ -156,12 +156,28 @@
   display: flex;
   column-gap: 5rem;
   margin: auto;
+
+  &:hover .benefit-card:hover {
+    cursor: pointer;
+    transform: translateY(-50px);
+  }
+
+  &:hover .benefit-card:not(:hover) {
+    transform: translateX(-10px) scale(0.9);
+    opacity: 0.9;
+  }
+
+  &:hover .benefit-card img:not(:hover) {
+    filter: grayscale(1);
+  }
 }
 
 .benefit-card img {
   width: 100%;
   height: 250px;
   object-fit: cover;
+
+  transition: all 0.4s ease-in-out;
 }
 
 .benefit-card {
@@ -171,6 +187,8 @@
   background: #1e0e60;
   border-radius: 50px;
   overflow: hidden;
+
+  transition: all 0.4s ease-in-out;
 }
 
 .benefit-card h4 {

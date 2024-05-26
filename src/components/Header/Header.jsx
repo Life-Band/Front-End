@@ -19,7 +19,7 @@ function Header(props) {
         </h1>
         <nav className="header-pages">
           <span>
-            <a href="#">Inicio</a>
+            <a href="/">Inicio</a>
           </span>
           <span>
             <a href="#">Vídeos</a>
@@ -28,7 +28,7 @@ function Header(props) {
             <a href="/pulseira">Pulseira</a>
           </span>
           <span>
-            <a href="#">Contato</a>
+            <a href="/contato">Contato</a>
           </span>
           <span>
             <a href="#">Equipe</a>
@@ -66,7 +66,6 @@ function Header(props) {
             setClick("divisorOpen");
             setOn("socialIcons");
             setMenuText("menuText");
-            setLinkTree("linkTree");
             setbarrabrancaVisible("visible");
           }}
         >
@@ -82,6 +81,7 @@ function Header(props) {
               setClick("divisor");
               setOn("socialIconOff");
               setMenuText("menuTextOff");
+              setbarrabrancaVisible(props.use);
             }}
           >
             <i class="fas fa-x " id="close-divisor"></i>
@@ -92,7 +92,7 @@ function Header(props) {
               <Link to="/Login">Login</Link>
             </h2>
             <h2>
-              <a href="#">Home</a>
+              <a href="/">Home</a>
             </h2>
             <h2>
               <a href="#">Vídeos</a>
@@ -101,7 +101,7 @@ function Header(props) {
               <a href="/pulseira">Pulseira</a>
             </h2>
             <h2>
-              <a href="#">Contato</a>
+              <a href="/contato">Contato</a>
             </h2>
             <h2>
               <a href="#">Equipe</a>
