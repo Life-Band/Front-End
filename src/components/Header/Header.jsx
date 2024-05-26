@@ -25,7 +25,7 @@ function Header(props) {
             <a href="#">Vídeos</a>
           </span>
           <span>
-            <a href="#">Pulseira</a>
+            <a href="/pulseira">Pulseira</a>
           </span>
           <span>
             <a href="#">Contato</a>
@@ -98,7 +98,7 @@ function Header(props) {
               <a href="#">Vídeos</a>
             </h2>
             <h2>
-              <a href="#">Pulseira</a>
+              <a href="/pulseira">Pulseira</a>
             </h2>
             <h2>
               <a href="#">Contato</a>
