@@ -69,6 +69,8 @@ header button:hover {
 }
 
 .right-elements {
+  position: absolute;
+  right: 40px;
   margin-right: 1rem;
   display: flex;
   gap: 40px;
@@ -169,6 +171,7 @@ header button:hover {
 
 .socialIcons {
   display: flex;
+
   align-items: center;
   justify-content: center;
   border: 1px solid transparent;
@@ -218,6 +221,15 @@ header button:hover {
 
 .menuText a:hover {
   color: #003f92;
+}
+
+.visible {
+  position: inherit;
+  display: flex;
+}
+
+.notVisible {
+  display: none;
 }
 
 @keyframes content {
