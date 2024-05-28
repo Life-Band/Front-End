@@ -1,8 +1,9 @@
 import "./Footer.css";
 import Logo from "../../assets/FooterAssets/Logo.png";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { useTranslation } from "react-i18next";
 
 function Footer() {
+  const { t } = useTranslation();
   return (
     <footer>
       <div className="socialMedia-container">
@@ -26,45 +27,45 @@ function Footer() {
       <div className="form-container">
         <div className="text-container">
           <div className="footer-container">
-            <h2>MAPA DO SITE</h2>
-            <a href="#inicio">Inicio</a>
-            <a href="#sobre">Sobre Nós</a>
-            <a href="#vantagens">Vantagens</a>
-            <a href="#depoimentos">Depoimentos</a>
-            <a href="#servicos">Serviços</a>
+            <h2>{t("FC-Mapa-Title")}</h2>
+            <a href="#inicio">{t("FC-Mapa-Text1")}</a>
+            <a href="#sobre">{t("FC-Mapa-Text2")}</a>
+            <a href="#vantagens">{t("FC-Mapa-Text3")}</a>
+            <a href="#depoimentos">{t("FC-Mapa-Text4")}</a>
+            <a href="#servicos">{t("FC-Mapa-Text5")}</a>
           </div>
           <div className="footer-container">
-            <h2>CONTATO</h2>
-            <a href="#">Contatos</a>
-            <a href="#">Social Media</a>
+            <h2>{t("FC-Contato-Title")}</h2>
+            <a href="#">{t("FC-Contato-Text1")}</a>
+            <a href="#">{t("FC-Contato-Text2")}</a>
           </div>
           <div className="footer-container">
-            <h2>VÍDEOS</h2>
-            <a href="#">Conteúdo</a>
+            <h2>{t("FC-Videos-Title")}</h2>
+            <a href="#">{t("FC-Videos-Text")}</a>
           </div>
         </div>
         <div className="form-father">
           <form action="" className="form-area">
-            <label className="label-title">Fale conosco</label>
+            <label className="label-title">{t("FaleConosco")}</label>
 
             <div className="content-Father">
               <div className="content-FaleConosco">
-                <label className="label-input">Nome completo</label>
-                <input type="text" placeholder="Digite seu nome" />
+                <label className="label-input">{t("FC-Name-Title")}</label>
+                <input type="text" placeholder={t("FC-Name-Placeholder")} />
               </div>
 
               <div className="content-FaleConosco">
-                <label className="label-input">E-mail</label>
-                <input type="text" placeholder="Digite seu e-mail" />
+                <label className="label-input">{t("FC-Email-Title")}</label>
+                <input type="text" placeholder={t("FC-Email-Placeholder")} />
               </div>
             </div>
 
             <div className="text-Geral">
-              <label className="label-input">Mensagem</label>
+              <label className="label-input">{t("FC-Mensagem")}</label>
               <textarea className="textArea-FaleConosco"></textarea>
 
               <button type="submit" className="submit-Faleconosco">
-                ENVIAR
+                {t("FC-Enviar")}
               </button>
             </div>
           </form>

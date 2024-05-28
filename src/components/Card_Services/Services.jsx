@@ -1,6 +1,9 @@
 import React from "react";
 import "./Services.css";
+import { useTranslation } from "react-i18next";
+
 const Services = (props) => {
+  const { t } = useTranslation();
   return (
     <>
       <div className="Services-Card">
@@ -11,7 +14,7 @@ const Services = (props) => {
         <p className="description-service">{props.description}</p>
         <hr className="divisor-description" />
         <a className="maisInfo" href="">
-          Saiba Mais
+          {t("SaibaMais")}
         </a>
       </div>
     </>

@@ -6,6 +6,7 @@ import Login from "./pages/Login/Login";
 import Cadastro from "./pages/Cadastro/Cadastro";
 import Pulseira from "./pages/Pulseira/Pulseira";
 import Contato from "./pages/Contato/Contato.jsx";
+import "./libs/i18n/configi18n.jsx";
 import "./index.css";
 
 const router = createBrowserRouter([

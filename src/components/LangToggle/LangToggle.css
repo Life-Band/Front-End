@@ -1,0 +1,101 @@
+.ToggleBtn-container {
+  position: fixed;
+  width: 130px;
+  height: 50px;
+  border-radius: 100px;
+  background: #fff;
+  border: 1px solid #7c7c7c;
+  bottom: 100px;
+  right: 100px;
+  z-index: 2000;
+}
+
+.ToggleBtn-Off-BR {
+  display: none;
+}
+
+.ToggleBtn-Off-EUA {
+  display: none;
+}
+
+.ToggleBtn-EUA {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  top: 0;
+  left: 0;
+  border-radius: 100px;
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+
+  img {
+    position: absolute;
+    right: 80px;
+    width: 30px;
+    animation: imageEUA 3s forwards;
+  }
+
+  span {
+    opacity: 0;
+    position: absolute;
+    color: #6b6c739d;
+    font-size: 1.4rem;
+    right: 65px;
+    font-weight: bold;
+    animation: text 3s forwards;
+  }
+}
+
+.ToggleBtn-BRASIL {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  top: 0;
+  left: 0;
+  border-radius: 100px;
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+
+  img {
+    position: absolute;
+    right: 18px;
+    width: 40px;
+    animation: imageBR 3s forwards;
+  }
+
+  span {
+    opacity: 0;
+    position: absolute;
+    color: #6b6c739d;
+    font-size: 1.4rem;
+    right: 30px;
+    font-weight: bold;
+    animation: text 3s forwards;
+  }
+}
+
+@keyframes imageBR {
+  100% {
+    right: 77px;
+  }
+}
+
+@keyframes imageEUA {
+  100% {
+    right: 18px;
+  }
+}
+
+@keyframes text {
+  100% {
+    opacity: 1;
+  }
+}

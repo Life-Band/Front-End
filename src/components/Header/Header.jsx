@@ -1,10 +1,12 @@
 import "./Header.css";
 import Logo from "../../assets/HeaderAssets/Logo.png";
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
 function Header(props) {
   const [click, setClick] = useState("divisor");
+  const { t } = useTranslation();
   const [on, setOn] = useState("socialIconOff");
   const [menuText, setMenuText] = useState("menuTextOff");
   const [inputOn, setinputOn] = useState("inputBoxOff");
@@ -19,19 +21,19 @@ function Header(props) {
         </h1>
         <nav className="header-pages">
           <span>
-            <a href="/">Inicio</a>
+            <a href="/">{t("Inicio")}</a>
           </span>
           <span>
-            <a href="#">Vídeos</a>
+            <a href="#">{t("Videos")}</a>
           </span>
           <span>
-            <a href="/pulseira">Pulseira</a>
+            <a href="/pulseira">{t("Pulseira")}</a>
           </span>
           <span>
-            <a href="/contato">Contato</a>
+            <a href="/contato">{t("Contato")}</a>
           </span>
           <span>
-            <a href="#">Equipe</a>
+            <a href="#">{t("Equipe")}</a>
           </span>
         </nav>
       </div>
@@ -89,22 +91,22 @@ function Header(props) {
 
           <nav className={menuText}>
             <h2>
-              <Link to="/Login">Login</Link>
+              <Link to="/Login">{t("Login")}</Link>
             </h2>
             <h2>
-              <a href="/">Home</a>
+              <a href="/">{t("Inicio")}</a>
             </h2>
             <h2>
-              <a href="#">Vídeos</a>
+              <a href="#">{t("Videos")}</a>
             </h2>
             <h2>
-              <a href="/pulseira">Pulseira</a>
+              <a href="/pulseira">{t("Pulseira")}</a>
             </h2>
             <h2>
-              <a href="/contato">Contato</a>
+              <a href="/contato">{t("Contato")}</a>
             </h2>
             <h2>
-              <a href="#">Equipe</a>
+              <a href="#">{t("Equipe")}</a>
             </h2>
           </nav>
 

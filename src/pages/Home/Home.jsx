@@ -9,10 +9,13 @@ import Calendar from "../../assets/ServicesAssets/IconeAgenda.png";
 import IconeCoracao from "../../assets/ServicesAssets/IconedoCard.png";
 import Pulseira from "../../assets/ServicesAssets/IconePulseira.png";
 import Footer from "../../components/Footer/Footer";
+import { useTranslation } from "react-i18next";
+import LanguageToggle from "../../components/LangToggle/LangToggle";
 import { useNavigate } from "react-router-dom";
 
 function Home(props) {
   const navigate = useNavigate();
+  const { t } = useTranslation();
   const redictButton = () => {
     navigate("/Cadastro");
   };
@@ -23,85 +26,59 @@ function Home(props) {
         <Header use="visible" className="header" />
 
         <div className="initial-info">
-          <h2>Agilidade e precisão cuidando de você na pior situação</h2>
-
+          <h2>{t("Slogan")}</h2>
+          <LanguageToggle />
           <button className="bracelet-btn">
             <img src={Bracelet} alt="Icone de pulseira" />
-            <span>+{props.cadastros} Pessoas Ativas</span>
+            <span>
+              +{props.cadastros} {t("P-Ativas")}
+            </span>
           </button>
         </div>
 
         <button className="signup-btn" onClick={redictButton}>
-          Cadastre-se
+          {t("Cad")}
         </button>
       </section>
 
       <section className="home-about" id="sobre">
         <div className="about-container">
           <div className="about-title">
-            <h2>Sobre nós</h2>
+            <h2>{t("SobreNos")}</h2>
           </div>
 
           <div className="about-texts">
             <div className="about-text">
-              <p>
-                Life band revolucionará o atendimento nos hospitais privados,
-                reduzindo o tempo de espera e proporcionando conforto aos
-                pacientes. Sua abordagem ágil e eficiente irá tornar os
-                processos de triagem e admissão mais suaves, aliviando a
-                ansiedade dos pacientes e familiares. Com isso, a empresa elevou
-                o padrão de qualidade no cuidado médico urgente, garantindo uma
-                experiência mais tranquila e sem complicações.
-              </p>
+              <p>{t("Texto-Sobre-1")}</p>
             </div>
             <div className="about-text">
-              <p>
-                Além disso, a introdução da pulseira tecnológica na sociedade
-                irá otimizar os serviços hospitalares, trazendo informações do
-                paciente, como histórico médico e alergias, permitindo um acesso
-                rápido e seguro aos dados necessários para o atendimento. Com
-                essa combinação de eficiência operacional e tecnologia avançada,
-                os hospitais terão um atendimento personalizado e de excelência,
-                focado no rápido atendimento dos pacientes.
-              </p>
+              <p>{t("Texto-Sobre-2")}</p>
             </div>
           </div>
         </div>
       </section>
 
       <section className="home-benefit" id="vantagens">
-        <h2>Vantagens</h2>
+        <h2>{t("Vantagens")}</h2>
 
         <div className="benefit-cards">
           <div className="benefit-card">
             <img src={FirtAid} alt="Imagem Ilustrativa de Primeiros Socorros" />
-            <h4>Primeiros Socorros</h4>
-            <p>
-              Trazemos o conhecimento através de vídeos em nosso site,
-              gratuitamente e de fácil acesso para podermos ajudar as pessoas
-              que mais amamos
-            </p>
+            <h4>{t("Card1-Title")}</h4>
+            <p>{t("Card1-Text")}</p>
           </div>
           <div className="benefit-card">
             <img
               src={ServiceQueue}
               alt="Imagem Ilustrativa de Não espere na fila!"
             />
-            <h4>Não espere na fila!</h4>
-            <p>
-              Nossa ferramenta que permite aos pacientes agendar consultas e
-              iniciar sua triagem totalmente online, pode ajudar a reduzir o
-              tempo de espera no atendimento presencial
-            </p>
+            <h4>{t("Card2-Title")}</h4>
+            <p>{t("Card2-Text")}</p>
           </div>
           <div className="benefit-card">
             <img src={Cloud} alt="Imagem Ilustrativa de Prontuário em nuvem" />
-            <h4>Prontuário em nuvem</h4>
-            <p>
-              Trabalhar com informações e prontuários na nuvem é uma das
-              melhores recomendações para otimizar o fluxo de atendimento no
-              hospital
-            </p>
+            <h4>{t("Card3-Title")}</h4>
+            <p>{t("Card3-Text")}</p>
           </div>
         </div>
       </section>
@@ -120,11 +97,8 @@ function Home(props) {
         </svg>
         <div className="imageContainer"></div>
         <div className="texts-feedback">
-          <h2>Depoimentos</h2>
-          <p>
-            Veja agora o depoimento de um de nossos clientes, e descubra como a
-            Life Band pode impactar sua vida
-          </p>
+          <h2>{t("Depoimentos")}</h2>
+          <p>{t("Depoimentos-Text")}</p>
         </div>
         <svg
           className="feedbackWave2"
@@ -140,22 +114,22 @@ function Home(props) {
       </section>
 
       <section className="home-services" id="servicos">
-        <h2 className="services-title">Serviços</h2>
+        <h2 className="services-title">{t("Serviços")}</h2>
         <div className="Container-Service">
           <Services
             icons={Calendar}
-            description="Agende confortavelmente suas consultas direto de casa, sem a necessidade de enfrentar filas"
-            title="Agendamento"
+            description={t("Serviços-C1-Text")}
+            title={t("Serviços-C1-Title")}
           />
           <Services
             icons={IconeCoracao}
-            description="Nossa plataforma oferece uma aba de orientações e recursos vitais para situações emergenciais."
-            title="Primeiros Socorros"
+            description={t("Serviços-C2-Text")}
+            title={t("Serviços-C2-Title")}
           />
           <Services
             icons={Pulseira}
-            description="A pulseira tecnológica envia sinais de socorro para um responsável escolhido pelo usuário da pulseira"
-            title="Pulseira"
+            description={t("Serviços-C3-Text")}
+            title={t("Serviços-C3-Title")}
           />
         </div>
       </section>
