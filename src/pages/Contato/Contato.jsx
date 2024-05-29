@@ -4,32 +4,44 @@ import Header from "../../components/Header/Header";
 import Person1 from "../../assets/ContatoAssets/Person1.png";
 import Person2 from "../../assets/ContatoAssets/Person2.png";
 import Person3 from "../../assets/ContatoAssets/Person3.png";
+import { useTranslation } from "react-i18next";
+import LanguageToggle from "../../components/LangToggle/LangToggle";
 
 function Contato() {
+  const { t } = useTranslation();
+
   return (
     <main className="contato-container">
       <section className="contato-form-container">
         <Header use="visible" className="header" />
-
+        <LanguageToggle />
         <form action="" className="form-contato">
-          <h2 className="label-title">Fale conosco</h2>
+          <h2 className="label-title">{t("FaleConosco")}</h2>
 
           <div className="inputs-contato">
             <div className="input-contato">
-              <label>Nome completo</label>
-              <input required type="text" placeholder="Digite seu nome" />
+              <label>{t("FC-Name-Title")}</label>
+              <input
+                required
+                type="text"
+                placeholder={t("FC-Name-Placeholder")}
+              />
             </div>
 
             <div className="input-contato">
-              <label>E-mail</label>
-              <input required type="text" placeholder="Digite seu e-mail" />
+              <label>{t("FC-Email-Title")}</label>
+              <input
+                required
+                type="text"
+                placeholder={t("FC-Email-Placeholder")}
+              />
             </div>
           </div>
 
           <div className="textarea-contato">
-            <label>Mensagem</label>
+            <label>{t("FC-Mensagem")}</label>
             <textarea required />
-            <button type="submit">ENVIAR</button>
+            <button type="submit">{t("FC-Enviar")}</button>
           </div>
         </form>
 
@@ -38,7 +50,7 @@ function Contato() {
       </section>
 
       <section className="contato-social-container">
-        <h2>Siga nossas redes sociais</h2>
+        <h2>{t("RedesSociais")}</h2>
 
         <div className="social-links">
           <a href="https://www.linkedin.com/company/life-band/">

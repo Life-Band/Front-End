@@ -44,6 +44,19 @@
   "FC-Name-Placeholder": "Type your name",
   "FC-Email-Title": "Email",
   "FC-Email-Placeholder": "Type your email",
-  "FC-Mensagem": "Mesage",
-  "FC-Enviar": "SEND"
+  "FC-Mensagem": "Message",
+  "FC-Enviar": "SEND",
+  "": "",
+  "PulseiraNome": "Bracelet | Life Click",
+  "PulseiraMainText": "Emergency in seconds, it's much easier to notify your contacts in case of emergency",
+  "PulseiraTitle1": "Emergency in moments",
+  "PulseiraText1": "Our bracelet has a plate that charges with solar energy, making it sustainable and with greater energy autonomy",
+  "PulseiraText2": "The bracelet also has a Geolocation function, making it easier to find the patient in a risk situation.",
+  "PulseiraText3": "When triggered, contacts will be notified of a possible emergency, in this situation those notified will have the option of calling paramedics or helping the victim, if the call is not answered, the emergency will be triggered automatically",
+  "PulseiraText4": "If the person responsible chooses to call the emergency department, the closest partner hospital will be immediately informed about the situation, sending data such as the person's name, location, the patient's drug allergies and other relevant information.",
+  "PulseiraTopic1": "Rechargeable battery with solar energy",
+  "PulseiraTopic2": "Geolocation Chip",
+  "PulseiraTopic3": "Emergency button",
+  "-": "",
+  "RedesSociais": "Follow our social networks"
 }
