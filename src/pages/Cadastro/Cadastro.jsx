@@ -15,7 +15,8 @@ const Cadastro = () => {
   return (
     <>
       <div className="container-cadastro">
-        <div className="Card-Left">
+          <div className="cards">
+          <div className="Card-Left">
           <div className="card-title">
             <Link to="/">
               <img
@@ -107,6 +108,7 @@ const Cadastro = () => {
             </button>
           </div>
         </div>
+          </div>
       </div>
     </>
   );

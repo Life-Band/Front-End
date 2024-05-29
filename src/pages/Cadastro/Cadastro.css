@@ -5,10 +5,23 @@
   box-sizing: border-box;
 }
 
+.cards{
+  display: flex;
+  justify-content: center;
+  background-image: url("src/assets/CadastroAssets/Background2.png");
+  overflow: hidden;
+  border-radius: 50px;
+  width: 100%;
+  height: 100%;
+  max-width: 1680px;
+  max-height: 700px;
+
+}
+
 .container-cadastro {
   width: 100%;
   height: 100%;
-  background-image: url("src/assets/CadastroAssets/BackgroundCadastro.png");
+  background: radial-gradient(214.83% 95.42% at 50% 50%, #002072 0%, #000 100%);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -18,20 +31,21 @@
 
 .Card-Left {
   width: 100%;
-  max-width: 580px;
+  max-width: 780px;
   height: 100%;
   max-height: 700px;
-  background-image: url("src/assets/CadastroAssets/Background2.png");
   overflow: hidden;
   border-radius: 50px 0 0 50px;
+  padding: 0 3rem 5rem;
 }
 
 .Card-Right {
-  position: relative;
-  left: -25px;
+  
   width: 100%;
-  max-width: 1150px;
+  width: 1150px;
+  height: 700px;
   height: 100%;
+  padding: 0 3rem 5rem;
   max-height: 700px;
   flex-direction: column;
   border-radius: 50px;
@@ -122,7 +136,7 @@
 .Estetoscopio-img {
   width: 400px;
   position: absolute;
-  margin-top: -50px;
+  margin-top: -90px;
   z-index: 2;
 
   transition: all 0.5s ease-in-out;

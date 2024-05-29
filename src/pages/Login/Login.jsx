@@ -1,4 +1,4 @@
-import React from "react";
+
 import "./Login.css";
 import Logo from "../../assets/LoginAssets/Logo.png";
 import FirstKit from "../../assets/LoginAssets/FirstKit.png";
@@ -44,7 +44,7 @@ function Login() {
                   <img src={EyeSlash} />
                 </button>
               </div>
-              <div input-cpf>
+              <div >
                 <input
                   className="input-cpf"
                   type="text"
