@@ -1,6 +1,12 @@
 import { redirect } from "react-router-dom";
 import { useNavigate, Link } from "react-router-dom";
 
+import Logo from "../../assets/CadastroAssets/Logo.png"
+
+import Estetoscopio from "../../assets/CadastroAssets/Estetoscopio.png"
+import Arrow from "../../assets/CadastroAssets/arrow-right.png"
+import ButtonHome from "../../assets/CadastroAssets/ButtonHome.png"
+
 import "./Cadastro.css";
 
 const Cadastro = () => {
@@ -14,7 +20,7 @@ const Cadastro = () => {
             <Link to="/">
               <img
                 className="logo-cadastro"
-                src="src\assets\CadastroAssets\Logo.png"
+                src={Logo}
                 alt=""
               />
             </Link>
@@ -25,7 +31,7 @@ const Cadastro = () => {
           </div>
           <img
             className="Estetoscopio-img"
-            src="src\assets\CadastroAssets\Estetoscopio.png"
+            src={Estetoscopio}
             alt=""
           />
         </div>
@@ -34,8 +40,11 @@ const Cadastro = () => {
           <div className="signup-title">
             <h2 className="signup-Text">Cadastro</h2>
             <a href="/login">
-              <img src="src\assets\CadastroAssets\arrow-right.png" alt="" />
+              <img src={Arrow} alt="" />
             </a>
+            <Link to="/">
+              <img className="Home-Button" src={ButtonHome} alt="" />
+            </Link>
           </div>
 
           <div className="signup-Columns">

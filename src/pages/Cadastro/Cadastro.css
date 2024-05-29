@@ -38,6 +38,10 @@
   background-color: #e8f0ff;
 }
 
+.signup-title .Home-Button{
+  margin-left: 29rem;
+}
+
 .signup-title {
   display: flex;
   flex-direction: row;
