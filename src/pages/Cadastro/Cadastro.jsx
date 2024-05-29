@@ -1,4 +1,3 @@
-
 import { redirect } from "react-router-dom";
 import { useNavigate, Link } from "react-router-dom";
 
@@ -6,13 +5,13 @@ import "./Cadastro.css";
 
 const Cadastro = () => {
   const navigate = useNavigate();
-  
+
   return (
     <>
       <div className="container-cadastro">
         <div className="Card-Left">
           <div className="card-title">
-            <Link to="/" >
+            <Link to="/">
               <img
                 className="logo-cadastro"
                 src="src\assets\CadastroAssets\Logo.png"
@@ -34,7 +33,7 @@ const Cadastro = () => {
         <div className="Card-Right">
           <div className="signup-title">
             <h2 className="signup-Text">Cadastro</h2>
-            <a href="http://localhost:5173/login">
+            <a href="/login">
               <img src="src\assets\CadastroAssets\arrow-right.png" alt="" />
             </a>
           </div>

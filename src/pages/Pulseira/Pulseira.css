@@ -18,14 +18,16 @@ main.pulseira {
   display: none;
 }
 
-h1.pulseira {
+h2.pulseira {
+  font-size: 3rem;
   margin-top: 100px;
 }
 
 .paragrafo-pulseira {
   color: #fff;
-  margin: 50px;
+  margin: 50px auto;
   font-size: 130%;
+  width: 400px;
   font-weight: 100;
 }
 
@@ -65,6 +67,7 @@ h1.pulseira {
 .paragrafo-pulseira2 {
   font-weight: 200;
   font-size: 1.5rem;
+  width: 800px;
 }
 
 .pulseira3 {

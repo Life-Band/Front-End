@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import "./LangToggle.css";
-import EUA from "../../assets/ToggleAssets/USA.jpg";
+import EUA from "../../assets/ToggleAssets/USA.png";
 import BRASIL from "../../assets/ToggleAssets/BRASIL.png";
+import BR_TEXT from "../../assets/ToggleAssets/BRA.png";
+import EUA_TEXT from "../../assets/ToggleAssets/EUA.png";
 import { useTranslation } from "react-i18next";
 
 const LanguageToggle = () => {
@@ -23,7 +25,8 @@ const LanguageToggle = () => {
           setToggleBR("ToggleBtn-BRASIL");
         }}
       >
-        <span>EUA</span> <img src={EUA} alt="ICONE DO EUA" />
+        <img src={EUA_TEXT} className="EUA-TEXT" alt="BRASIL TEXT" />
+        <img src={EUA} className="EUA-ICON" alt="ICONE DO EUA" />
       </button>
       <button
         className={toggleBR}
@@ -33,7 +36,8 @@ const LanguageToggle = () => {
           setToggleEUA("ToggleBtn-EUA");
         }}
       >
-        <span>BR</span> <img src={BRASIL} alt="ICONE DO BRASIL" />
+        <img src={BR_TEXT} className="BR-TEXT" alt="BRASIL TEXT" />
+        <img src={BRASIL} className="BR-ICON" alt="ICONE DO BRASIL" />
       </button>
     </div>
   );

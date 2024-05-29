@@ -91,7 +91,7 @@ function Header(props) {
 
           <nav className={menuText}>
             <h2>
-              <Link to="/Login">{t("Login")}</Link>
+              <Link to="/login">{t("Login")}</Link>
             </h2>
             <h2>
               <a href="/">{t("Inicio")}</a>

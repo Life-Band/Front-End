@@ -45,5 +45,18 @@
   "FC-Email-Title": "E-mail",
   "FC-Email-Placeholder": "Digite seu e-mail",
   "FC-Mensagem": "Mensagem",
-  "FC-Enviar": "ENVIAR"
+  "FC-Enviar": "ENVIAR",
+  "": "",
+  "PulseiraNome": "Pulseira | Life Click",
+  "PulseiraMainText": "Emergência em segundos, com ela ficou muito mais fácil avisar seus contatos em caso de urgência",
+  "PulseiraTitle1": "Emergência em instantes",
+  "PulseiraText1": "Nossa pulseira conta com uma placa que se carrega com energia solar, tornando-a sustentável e com uma maior autonomia de energia",
+  "PulseiraText2": "A pulseira também tem a função de Geolocalização, tornando assim mais fácil de encontrar o paciente em uma situação de risco",
+  "PulseiraText3": "Quando acionada, os contatos serão avisados de uma possível emergência, nessa situação os notificados terão a opção de ligar para os paramédicos ou socorrer a vítima, caso o chamado não seja atendido, a emergência será acionada automaticamente",
+  "PulseiraText4": "Se o responsável optar por acionar a urgência, o hospital parceiro mais próximo será informado imediatamente sobre a situação, enviando dados como o nome da pessoa, localização, alergias a medicamentos do paciente e outras informações relevantes",
+  "PulseiraTopic1": "Bateria recarregável com energia Solar",
+  "PulseiraTopic2": "Chip de Geolocalização",
+  "PulseiraTopic3": "Botão de Emergência",
+  "-": "",
+  "RedesSociais": "Siga nossas redes sociais"
 }

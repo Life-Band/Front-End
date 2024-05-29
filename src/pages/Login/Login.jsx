@@ -4,7 +4,7 @@ import Logo from "../../assets/LoginAssets/Logo.png";
 import FirstKit from "../../assets/LoginAssets/FirstKit.png";
 import Arrow from "../../assets/LoginAssets/Seta.png";
 import EyeSlash from "../../assets/LoginAssets/Eye-Slash.png";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
 
 function Login() {
   return (
@@ -19,7 +19,7 @@ function Login() {
         <div className="right-container">
           <div className="title-login">
             <h1>Login</h1>
-            <a href="http://localhost:5173/cadastro" className="arrow">
+            <a href="/cadastro" className="arrow">
               <img src={Arrow} />
             </a>
           </div>
