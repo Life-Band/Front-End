@@ -1,5 +1,5 @@
-import { redirect } from "react-router-dom";
-import { useNavigate, Link } from "react-router-dom";
+
+import {  Link } from "react-router-dom";
 
 import Logo from "../../assets/CadastroAssets/Logo.png"
 
@@ -10,7 +10,7 @@ import ButtonHome from "../../assets/CadastroAssets/ButtonHome.png"
 import "./Cadastro.css";
 
 const Cadastro = () => {
-  const navigate = useNavigate();
+  
 
   return (
     <>
