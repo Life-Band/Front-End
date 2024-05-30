@@ -9,7 +9,7 @@
 .cards{
   display: flex;
   justify-content: center;
-  /* background-image:  url("src/assets/CadastroAssets/Background2.png"); */
+  
   overflow: hidden;
   border-radius: 50px;
   width: 100%;
