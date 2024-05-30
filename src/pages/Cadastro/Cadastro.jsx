@@ -13,7 +13,10 @@ const Cadastro = () => {
   return (
     <>
       <div className="container-cadastro">
-        <div className="cards" style={{ backgroundImage: `url(${Background2})` }}>
+        <div
+          className="cards"
+          style={{ backgroundImage: `url(${Background2})` }}
+        >
           <div className="Card-Left">
             <div className="card-title">
               <Link to="/">
