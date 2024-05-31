@@ -1,12 +1,10 @@
 import "./App.css";
-// import Home from "./pages/Home/Home";
-import PrimeirosSocorros from "./pages/PrimeirosSocorros/PrimeirosSocorros";
+import Home from "./pages/Home/Home";
 
 function App() {
   return (
     <>
-      {/* <Home cadastros="8" /> */}
-      < PrimeirosSocorros />
+      <Home cadastros="8" />
     </>
   );
 }
