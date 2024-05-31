@@ -33,7 +33,7 @@ function Header(props) {
             <a href="/contato">{t("Contato")}</a>
           </span>
           <span>
-            <a href="#">{t("Equipe")}</a>
+            <a href="/equipe">{t("Equipe")}</a>
           </span>
         </nav>
       </div>
@@ -106,7 +106,7 @@ function Header(props) {
               <a href="/contato">{t("Contato")}</a>
             </h2>
             <h2>
-              <a href="#">{t("Equipe")}</a>
+              <a href="/equipe">{t("Equipe")}</a>
             </h2>
           </nav>
 

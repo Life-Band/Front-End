@@ -13,7 +13,7 @@ function Contato() {
   return (
     <main className="contato-container">
       <section className="contato-form-container">
-        <Header use="visible" className="header" />
+        <Header use="notVisible" className="header" />
         <LanguageToggle />
         <form action="" className="form-contato">
           <h2 className="label-title">{t("FaleConosco")}</h2>

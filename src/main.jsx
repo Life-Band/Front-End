@@ -6,6 +6,8 @@ import Login from "./pages/Login/Login";
 import Cadastro from "./pages/Cadastro/Cadastro";
 import Pulseira from "./pages/Pulseira/Pulseira";
 import Contato from "./pages/Contato/Contato.jsx";
+import Equipe from "./pages/Equipe/Equipe.jsx";
+import Zuri from "./pages/AssistenteZuri/AssistenteZuri.jsx";
 import "./libs/i18n/configi18n.jsx";
 import "./index.css";
 
@@ -29,6 +31,14 @@ const router = createBrowserRouter([
   {
     path: "contato",
     element: <Contato />,
+  },
+  {
+    path: "equipe",
+    element: <Equipe />,
+  },
+  {
+    path: "zuri",
+    element: <Zuri />,
   },
 ]);
 

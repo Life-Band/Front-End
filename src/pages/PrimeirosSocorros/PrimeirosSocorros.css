@@ -1,0 +1,115 @@
+
+.main-socorros{
+    position: relative;
+    background-color: #100E60;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('src/assets/PrimeirosSocorrosAssets/Background.png');
+}
+
+.socorros-container .titlePage{
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+}
+
+section .titlePage{
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+}
+
+.socorros-container{
+    padding: 5rem;
+}
+
+.cards-videos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4.5rem;
+}
+
+.card-plus  {
+    width: 300px;
+    height: 350px;
+    padding: 5rem 4.7rem;
+    border-radius: 28px; 
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-plus img{
+    display: flex;
+    width: 120px;
+    height: 120px; 
+    max-height: 300px;
+    border-radius: 28px; 
+}
+
+/* Contatos de Emergencia */
+ 
+.container-Emergencia{
+    margin-top: 120px;
+}
+
+.contato-emergencia{
+    margin-bottom: 120px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.img-contato{
+    width: 400px;
+    height: 400px;
+    transition: 8s; 
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+    opacity: 0.9;
+}
+
+.img-emergencia img {
+    width: 400px;
+    height: 350px;
+}
+
+.img-emergencia {
+    width: 400px;
+    height: 350px;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay img {
+    border-radius: 40px;
+}
+
+.overlay:hover {
+    opacity: 1;
+    /* transition: transform 0.5s, z-index 0s, left 0.5s;
+    transition-delay: 0s, 0.5s, 0.5s; */
+} 
+
+
+

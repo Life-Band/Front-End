@@ -1,0 +1,72 @@
+.integrante-card {
+  display: flex;
+  width: 370px;
+  margin-top: 100px;
+  flex-direction: column;
+
+  hr {
+    width: 30px;
+    opacity: 0.3;
+    align-self: center;
+    margin: 5px;
+  }
+
+  .image-integrante {
+    width: 250px;
+    height: 250px;
+    border-radius: 80px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+    margin: 15px auto;
+
+    img {
+      width: 250px;
+      height: 250px;
+    }
+
+    .integrante-links {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      width: 60px;
+      background: rgba(0, 10, 145, 0.27);
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(13.9px);
+      -webkit-backdrop-filter: blur(13.9px);
+      right: 30px;
+      bottom: 30px;
+
+      transition: all 0.4s ease-in-out;
+
+      .hr-links {
+        width: 20px;
+        margin: 0;
+      }
+
+      i {
+        color: #fff;
+        margin: 8px;
+      }
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  hr {
+    align-self: center;
+    width: 30px;
+  }
+
+  .nome-integrante {
+    font-size: 1.2rem;
+  }
+
+  .funcao-integrante {
+    font-size: 1.1rem;
+    color: #7ea9ff;
+  }
+}

@@ -7,6 +7,9 @@ main.contato-container {
 .contato-form-container {
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
   background: url("../../assets/ContatoAssets/BG.jpg");
   background-size: cover;
@@ -14,8 +17,8 @@ main.contato-container {
 }
 
 .form-contato {
-  width: 1100px;
-  height: 600px;
+  width: 1000px;
+  height: 520px;
   margin: auto;
   margin-top: 80px;
   background: #9cc4ff93;
@@ -69,8 +72,9 @@ main.contato-container {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 30px;
     width: 100%;
-    height: 400px;
+    height: 250px;
     gap: 20px;
 
     label {
@@ -108,7 +112,7 @@ main.contato-container {
       margin: 10px;
       border-radius: 30px;
       width: 120px;
-      height: 40px;
+      height: 60px;
       background: transparent;
       border: 1px solid rgba(255, 255, 255, 0.5);
       cursor: pointer;
@@ -125,9 +129,10 @@ main.contato-container {
 
 .person1 {
   position: absolute;
-  bottom: -190px;
+  bottom: -126px;
   left: 100px;
   z-index: 99;
+  width: 400px;
 }
 
 .person2 {
@@ -135,10 +140,11 @@ main.contato-container {
   bottom: 0;
   right: 50px;
   z-index: 1;
+  width: 400px;
 }
 
 .person3 {
-  width: 700px;
+  width: 500px;
   position: absolute;
   bottom: 0;
   right: 50px;

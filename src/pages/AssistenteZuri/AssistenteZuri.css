@@ -1,0 +1,90 @@
+.zuri-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background: #0d0250;
+}
+
+.contentZuri-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  width: 100%;
+  height: 90%;
+
+  .h2-zuri {
+    color: #000;
+    font-weight: 200;
+    font-size: 300%;
+    margin-top: 20px;
+  }
+
+  hr {
+    width: 150px;
+    align-self: center;
+    margin: 0 auto;
+    border: 1.5px solid #0d0250;
+  }
+
+  .chat {
+    background: #e8f0ff;
+    width: 1000px;
+    height: 550px;
+    margin-bottom: 70px;
+    margin-left: 37px;
+    border-radius: 30px;
+
+    .options-zuri {
+      width: 50%;
+      padding: 30px 50px;
+      margin-left: 35px;
+      margin-top: 10rem;
+      display: flex;
+      gap: 18px;
+      background: #fff;
+      flex-direction: column;
+      border-radius: 30px;
+      border: 1px solid #d3d3d3;
+    }
+
+    button {
+      background: transparent;
+      border: none;
+      color: #000;
+      font-size: 100%;
+      font-weight: 100;
+      opacity: 0.6;
+      text-align: left;
+    }
+
+    .input-zuri {
+      display: flex;
+      align-items: center;
+      padding: 30px 50px;
+      width: 93%;
+      height: 50px;
+      gap: 10px;
+      margin: 0 auto;
+      margin-top: 20px;
+      border-radius: 30px;
+      border: 1px solid #d3d3d3;
+      background: #fff;
+
+      button {
+        color: #000;
+        font-size: 1.2rem;
+      }
+
+      i {
+        color: #000;
+        font-size: 1.2rem;
+        opacity: 0.6;
+      }
+    }
+  }
+}
+
+img {
+  width: 400px;
+}

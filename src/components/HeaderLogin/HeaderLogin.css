@@ -1,0 +1,146 @@
+header {
+  width: 94%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 0 0 0;
+  margin: 0 auto;
+}
+
+header a {
+  text-decoration: none;
+  color: #fff;
+}
+
+header h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header h1 a {
+  max-height: 44px;
+  max-width: 52px;
+}
+
+.logo {
+  width: 100%;
+  filter: brightness(0) invert(1);
+}
+
+.logo:hover {
+  filter: brightness(1) invert(0);
+}
+
+header span {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+header span a {
+  color: #fff;
+
+  transition: color 0.4s ease-in-out;
+}
+
+header span a:hover {
+  color: #6cabff;
+}
+
+header button {
+  border: 1px solid transparent;
+  font-size: 1.5em;
+  background-color: transparent;
+  cursor: pointer;
+  transition: color 0.4s ease-in-out;
+}
+
+header button:hover {
+  color: #6cabff;
+}
+
+.left-elements {
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.right-elements {
+  position: absolute;
+  right: 40px;
+  margin-right: 1rem;
+  display: flex;
+  gap: 40px;
+}
+
+.header-pages {
+  display: flex;
+  align-items: center;
+  padding-left: 7rem;
+  column-gap: 8vw;
+}
+
+.offMenu {
+  display: none;
+}
+
+.menuOn {
+  top: 0;
+  right: -410px;
+  width: 400px;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  animation: menu 2s forwards;
+
+  justify-content: center;
+  background: #1a1d2a;
+}
+
+.user-profile img {
+  width: 100px;
+}
+.user-profile {
+  padding: 25px;
+}
+
+.nav-header {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  margin-top: 50px;
+
+  h2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 30px;
+    font-weight: 300;
+    color: #fff;
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    display: flex;
+    align-items: center;
+    margin: 10px auto;
+    column-gap: 20px;
+    font-weight: 500;
+    color: #fff;
+    font-size: 1.5rem;
+  }
+
+  img {
+    width: 40px;
+    filter: brightness(0) invert(1);
+  }
+}
+
+@keyframes menu {
+  100% {
+    right: 0px;
+  }
+}
