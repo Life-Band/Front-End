@@ -43,31 +43,34 @@ const PrimeirosSocorros = () => {
       <section className="container-Emergencia">
         <h2 className="titlePage">Contatos de Emergência</h2>
         <div className="contato-emergencia">
-            <div className="img-emergencia ">
-               <img className="img-contato" src={Samu} alt="" />
+           <a href="tel:192"> <div className="img-emergencia ">
+               <img className="img-contato samu" src={Samu} alt="" />
               <div className="overlay">
-                <img  src={SamuOverlay} alt="" />
+                <img src={SamuOverlay} alt="" />
               </div>
             </div>
-            <div className="img-emergencia ">
-               <img className="img-contato" src={Bombeiro} alt="" />
+            </a>
+           <a href="tel:193"><div className="img-emergencia">
+               <img className="img-contato bombeiro" src={Bombeiro} alt="" />
               <div className="overlay">
-                <img  src={BombeiroOverlay} alt="" />
+                <img src={BombeiroOverlay} alt="" />
               </div>
             </div>
-            <div className="img-emergencia ">
-               <img className="img-contato" src={Policia} alt="" />
+           </a>
+           <a href="tel:190"><div className="img-emergencia">
+               <img className="img-contato policia" src={Policia} alt="" />
               <div className="overlay">
-                <img  src={PoliciaOverlay} alt="" />
+                <img src={PoliciaOverlay} alt="" />
               </div>
             </div>
-            <div className="img-emergencia ">
-               <img className="img-contato" src={DefesaCivil} alt="" />
+           </a>
+           <a href="tel:199"><div className="img-emergencia">
+               <img className="img-contato defesacivil" src={DefesaCivil} alt="" />
               <div className="overlay">
-                <img  src={DefesaCivilOverlay} alt="" />
+                <img src={DefesaCivilOverlay} alt="" />
               </div>
             </div>
-           
+           </a>
         </div>
       </section>
       <Footer />
