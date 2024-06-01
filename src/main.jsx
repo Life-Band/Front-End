@@ -11,7 +11,8 @@ import Equipe from "./pages/Equipe/Equipe.jsx";
 import Zuri from "./pages/AssistenteZuri/AssistenteZuri.jsx";
 import PrimeirosSocorros from "./pages/PrimeirosSocorros/PrimeirosSocorros.jsx";
 import VideosPs from "./pages/VideosPs/VideosPs.jsx";
-// import HomePosLogin from "./pages/HomePosLogin/HomePosLogin.jsx"
+import HomePosLogin from "./pages/HomePosLogin/HomePosLogin.jsx";
+import LifeClick from "./pages/LifeClick/LifeClick.jsx";
 import "./libs/i18n/configi18n.jsx";
 import "./index.css";
 
@@ -55,6 +56,14 @@ const router = createBrowserRouter([
   {
     path: "videosps",
     element: <VideosPs />,
+  },
+  {
+    path: "posLogin",
+    element: <HomePosLogin />,
+  },
+  {
+    path: "lifeClick",
+    element: <LifeClick />,
   },
 ]);
 
