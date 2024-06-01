@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
-import CardsVideos from "../../components/CardsPrimeirosScorros/CardVideos.jsx";
+import CardsVideos from "../../components/CardsPrimeirosSocorros/CardVideos.jsx";
 import ImageEngasgo from "../../assets/PrimeirosSocorrosAssets/Engasgo.png";
 import ImageInfarto from "../../assets/PrimeirosSocorrosAssets/Infarto.png";
 import PlusImage from "../../assets/PrimeirosSocorrosAssets/plus.png";
@@ -20,25 +20,30 @@ import "./PrimeirosSocorros.css";
 
 const PrimeirosSocorros = () => {
   return (
-    <div className="main-socorros">
+    <main className="main-socorros">
+      <div className="socorros-container">
       <Header use="notVisible" />
-      <main className="socorros-container">
         <h2 className="titlePage">Primeiros Socorros</h2>
         <div className="cards-videos">
-          <CardsVideos
+          <CardsVideos 
             crises="Engasgo"
             image={ImageEngasgo}
-            link={"https://www.youtube.com/"}
+            link={"https://www.youtube.com/watch?v=5kyyABzEy_k&pp=ygUacHJpbWVpcm9zIHNvY29ycm9zIGVzZ2FzZ28%3D"}
+            
           />
-          <CardsVideos crises="Infarto" image={ImageInfarto} />
+          <CardsVideos 
+          crises="Infarto"
+          image={ImageInfarto}
+          link={"https://youtu.be/kdY-RKANFyc?si=YUh2TVqmHrAPZ7G4"}
+          />
 
-          <Link to="">
+          <Link to="/videosps">
             <div className="card-plus">
               <img src={PlusImage} alt="" />
             </div>
           </Link>
         </div>
-      </main>
+      </div>
 
       <section className="container-Emergencia">
         <h2 className="titlePage">Contatos de Emergência</h2>
@@ -74,7 +79,7 @@ const PrimeirosSocorros = () => {
         </div>
       </section>
       <Footer />
-    </div>
+    </main>
   );
 };
 

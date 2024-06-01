@@ -1,7 +1,7 @@
 import "./HeaderLogin.css";
 import Logo from "../../assets/HeaderAssets/Logo.png";
 import React, { useState } from "react";
-import Profile from "../../assets/HeaderAssets/PROFILE.png";
+import Profile from "../../assets/HeaderAssets/PROFILE.jpg";
 import Pulseira from "../../assets/HeaderAssets/Pulseira.png";
 import Hand from "../../assets/HeaderAssets/Hand.png";
 import Perfil from "../../assets/HeaderAssets/Perfil.png";
@@ -9,7 +9,7 @@ import Agenda from "../../assets/HeaderAssets/Agenda.png";
 import Sair from "../../assets/HeaderAssets/Sair.png";
 import { useTranslation } from "react-i18next";
 
-function HeaderLogin(props) {
+function HeaderLogin() {
   const [onMenu, setOnMenu] = useState("offMenu");
   const { t } = useTranslation();
   return (
@@ -59,7 +59,7 @@ function HeaderLogin(props) {
               setOnMenu("offMenu");
             }}
           >
-            <i class="fas fa-x " id="close-divisor"></i>
+            <i class="fas fa-x" id="close-divisor"></i>
           </button>
 
           <div className="user-profile">

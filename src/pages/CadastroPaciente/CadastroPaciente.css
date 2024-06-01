@@ -1,0 +1,129 @@
+.cadastroPacienteContainer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(214.83% 95.42% at 50% 50%, #002072 0%, #000 100%);
+}
+
+.divCadastro {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 80vw;
+  height: 75vh;
+  border-radius: 30px;
+  background: #E8F0FF;
+}
+
+.headerCadastro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  padding: 40px 50px;
+
+  .h2CadPaciente {
+    display: flex;
+    align-items: center;
+
+    h2 {
+      color: #0D1E7A;
+      font-size: 64px;
+    }
+  
+    img {
+      width: 50px;
+      margin: 0 50px;
+    }
+  }
+
+  img {
+    width: 50px;
+  }
+}
+
+.inputPacienteContainer {
+  width: 100%;
+  padding: 0 50px;
+  column-gap: 30px;
+  row-gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  margin: 20px 0;
+
+  .inputCadPaciente {
+    background: #FFFFFF;
+    padding: 15px 20px;
+    color: #00000060;
+    border-radius: 10px;
+    border: 1px solid #00000010;
+
+    &::placeholder {
+      color: #00000060;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  div {
+    position: relative;
+
+    input {
+      background: #FFFFFF;
+      color: #00000060;
+      width: 100%;
+      border-radius: 10px;
+      border: 1px solid #00000010;
+  
+      &::placeholder {
+        color: #00000060;
+      }
+  
+      &:focus {
+        outline: none;
+      }
+    }
+
+    
+  button {
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border: none;
+    top: 12px;
+    right: 20px;
+    position: absolute;
+
+    img {
+      width: 100%;
+    }
+  }
+  }
+}
+
+.cadPacienteBtn {
+  width: 350px;
+  height: 55px;
+  margin: 32px;
+
+  border: none;
+  background: #0D1E7A;
+  border-radius: 10px;
+
+  font-size: 26px;
+  cursor: pointer;
+
+  transition: all .4s ease-in-out;
+
+  &:hover{
+    background: #e8f0ffe3;
+    color: #0D1E7A;
+    border: 1px solid #0D1E7A;
+    transform: scale(1.1);
+  }
+}

@@ -15,7 +15,7 @@ function Header(props) {
     <header>
       <div className="left-elements">
         <h1>
-          <a href="#">
+          <a href="/">
             <img src={Logo} className="logo" alt="Logo da Life Band" />
           </a>
         </h1>
@@ -24,7 +24,7 @@ function Header(props) {
             <a href="/">{t("Inicio")}</a>
           </span>
           <span>
-            <a href="#">{t("Videos")}</a>
+            <a href="/primeirossocorros">{t("Videos")}</a>
           </span>
           <span>
             <a href="/pulseira">{t("Pulseira")}</a>

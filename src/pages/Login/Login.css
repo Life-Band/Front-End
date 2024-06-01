@@ -15,8 +15,8 @@ main.main-container {
   background-image: url(../../assets/LoginAssets/Fundo2.jpg);
   overflow: hidden;
   border-radius: 50px;
-  width: 1680px;
-  height: 700px;
+  width: 1390px;
+  height: 675px;
   position: relative;
 }
 
@@ -24,6 +24,7 @@ main.main-container {
   align-self: flex-start;
   display: flex;
   position: absolute;
+  width: 60px;
   top: 10%;
   left: 5%;
 }
@@ -67,8 +68,8 @@ main.main-container {
   background: #e8f0ff;
   position: absolute;
   right: 0;
-  width: 1150px;
-  height: 700px;
+  width: 1000px;
+  height: 675px;
   border-radius: 50px 0 0 50px;
 }
 
@@ -196,7 +197,12 @@ main.main-container {
   position: absolute;
   right: 55%;
   top: 45%;
+
   background: transparent;
   border: none;
   cursor: pointer;
+
+  img {
+    width: 20px;
+  }
 }

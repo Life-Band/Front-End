@@ -95,6 +95,7 @@ header button:hover {
   position: absolute;
   display: flex;
   animation: menu 2s forwards;
+  z-index: 1000;
 
   justify-content: center;
   background: #1a1d2a;
@@ -102,6 +103,8 @@ header button:hover {
 
 .user-profile img {
   width: 100px;
+  border-radius: 100px;
+  border: 1px solid #fff;
 }
 .user-profile {
   padding: 25px;
