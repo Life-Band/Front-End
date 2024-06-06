@@ -234,7 +234,7 @@
   height: 50%;
   border-radius: 50px;
   object-fit: cover;
-  background: url("../../assets/FeedbackAssets/feedbackImg.png");
+  background: url("../../assets/FeedbackAssets/Depoimentos.png");
   background-position: center;
   background-size: cover;
   cursor: pointer;
@@ -243,7 +243,7 @@
 }
 
 .home-feedback .imageContainer:hover {
-  background: url("../../assets/FeedbackAssets/Depoimentos.png");
+  background: url("../../assets/FeedbackAssets/feedbackImg.png");
   background-position: center;
   background-size: cover;
   transform: scale(1.05);
