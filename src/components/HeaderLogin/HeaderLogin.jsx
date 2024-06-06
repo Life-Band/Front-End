@@ -13,14 +13,14 @@ function HeaderLogin() {
   const [onMenu, setOnMenu] = useState("offMenu");
   const { t } = useTranslation();
   return (
-    <header>
-      <div className="left-elements">
+    <header className="login-header">
+      <div className="left-elements-login">
         <h1>
           <a href="#">
-            <img src={Logo} className="logo" alt="Logo da Life Band" />
+            <img src={Logo} className="logo-login" alt="Logo da Life Band" />
           </a>
         </h1>
-        <nav className="header-pages">
+        <nav className="header-login-pages">
           <span>
             <a href="/">{t("Inicio")}</a>
           </span>
@@ -39,7 +39,7 @@ function HeaderLogin() {
         </nav>
       </div>
 
-      <div className="right-elements">
+      <div className="right-elements-login">
         <button
           type="button"
           className="openMenu"

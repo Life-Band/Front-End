@@ -1,4 +1,4 @@
-header {
+header.login-header {
   width: 94%;
   display: flex;
   align-items: center;
@@ -7,32 +7,32 @@ header {
   margin: 0 auto;
 }
 
-header a {
+header.login-header a {
   text-decoration: none;
   color: #fff;
 }
 
-header h1 {
+header.login-header h1 {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-header h1 a {
+header.login-header h1 a {
   max-height: 44px;
   max-width: 52px;
 }
 
-.logo {
+.logo-login {
   width: 100%;
   filter: brightness(0) invert(1);
 }
 
-.logo:hover {
+.logo-login:hover {
   filter: brightness(1) invert(0);
 }
 
-header span {
+header.login-header span {
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 2px;
@@ -40,17 +40,17 @@ header span {
   position: relative;
 }
 
-header span a {
+header.login-header span a {
   color: #fff;
 
   transition: color 0.4s ease-in-out;
 }
 
-header span a:hover {
+header.login-header span a:hover {
   color: #6cabff;
 }
 
-header button {
+header.login-header button {
   border: 1px solid transparent;
   font-size: 1.5em;
   background-color: transparent;
@@ -58,17 +58,17 @@ header button {
   transition: color 0.4s ease-in-out;
 }
 
-header button:hover {
+header.login-header button:hover {
   color: #6cabff;
 }
 
-.left-elements {
+.left-elements-login {
   margin-left: 1rem;
   display: flex;
   align-items: center;
 }
 
-.right-elements {
+.right-elements-login {
   position: absolute;
   right: 40px;
   margin-right: 1rem;
@@ -76,15 +76,11 @@ header button:hover {
   gap: 40px;
 }
 
-.header-pages {
+.header-login-pages {
   display: flex;
   align-items: center;
   padding-left: 7rem;
   column-gap: 8vw;
-}
-
-.offMenu {
-  display: none;
 }
 
 .menuOn {

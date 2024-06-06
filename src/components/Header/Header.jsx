@@ -9,7 +9,6 @@ function Header(props) {
   const { t } = useTranslation();
   const [on, setOn] = useState("socialIconOff");
   const [menuText, setMenuText] = useState("menuTextOff");
-  const [inputOn, setinputOn] = useState("inputBoxOff");
   const [barrabrancaVisible, setbarrabrancaVisible] = useState(props.use);
   return (
     <header>
@@ -39,28 +38,6 @@ function Header(props) {
       </div>
 
       <div className="right-elements">
-        <div className={inputOn}>
-          <input type="text" className="inputIndexOn" placeholder="Pesquisar" />
-
-          <button
-            id="btn-Close"
-            onClick={() => {
-              setinputOn("inputBoxOff");
-            }}
-          >
-            <i class="fas fa-x"></i>
-          </button>
-        </div>
-
-        <button
-          type="button"
-          onClick={() => {
-            setinputOn("inputBoxOn");
-          }}
-        >
-          <i class="fa-solid fa-magnifying-glass" id="lupa"></i>
-        </button>
-
         <button
           type="button"
           className="openMenu"
