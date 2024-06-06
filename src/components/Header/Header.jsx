@@ -97,7 +97,7 @@ function Header(props) {
               <a href="/">{t("Inicio")}</a>
             </h2>
             <h2>
-              <a href="/primeirossocorros">{t("Videos")}</a>
+              <a href="/videosps">{t("Videos")}</a>
             </h2>
             <h2>
               <a href="/pulseira">{t("Pulseira")}</a>
