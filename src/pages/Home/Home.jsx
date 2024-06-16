@@ -1,6 +1,5 @@
 import "./Home.css";
 import Header from "../../components/Header/Header";
-import Bracelet from "../../assets/HomeAssets/pulseira.png";
 import FirtAid from "../../assets/HomeAssets/cards/card-firstaid.png";
 import ServiceQueue from "../../assets/HomeAssets/cards/card-servicequeue.png";
 import Cloud from "../../assets/HomeAssets/cards/card-cloud.png";
@@ -11,34 +10,21 @@ import Pulseira from "../../assets/ServicesAssets/IconePulseira.png";
 import Footer from "../../components/Footer/Footer";
 import { useTranslation } from "react-i18next";
 import LanguageToggle from "../../components/LangToggle/LangToggle";
-import { useNavigate } from "react-router-dom";
+import Carrossel from "../../components/Carrossel/Carrossel";
 
-function Home(props) {
-  const navigate = useNavigate();
+function Home() {
   const { t } = useTranslation();
-  const redictButton = () => {
-    navigate("/Cadastro");
-  };
 
   return (
     <main className="home">
       <section className="home-initial" id="inicio">
-        <Header use="visible" className="header" />
+        <Header use="notVisible" className="header" />
 
         <div className="initial-info">
-          <h2>{t("Slogan")}</h2>
-          <LanguageToggle />
-          <button className="bracelet-btn">
-            <img src={Bracelet} alt="Icone de pulseira" />
-            <span>
-              +{props.cadastros} {t("P-Ativas")}
-            </span>
-          </button>
+          <Carrossel />
         </div>
 
-        <button className="signup-btn" onClick={redictButton}>
-          {t("Cad")}
-        </button>
+        <LanguageToggle />
       </section>
 
       <section className="home-about" id="sobre">

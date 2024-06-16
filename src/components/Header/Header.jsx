@@ -23,10 +23,16 @@ function Header(props) {
             <a href="/">{t("Inicio")}</a>
           </span>
           <span>
+            <a href="/quemsomos">{t("Quem somos")}</a>
+          </span>
+          <span>
             <a href="/primeirossocorros">{t("Videos")}</a>
           </span>
           <span>
             <a href="/pulseira">{t("Pulseira")}</a>
+          </span>
+          <span>
+            <a href="/planos">{t("Planos")}</a>
           </span>
           <span>
             <a href="/contato">{t("Contato")}</a>
@@ -38,6 +44,23 @@ function Header(props) {
       </div>
 
       <div className="right-elements">
+        <div className="sos">
+          <button
+            type="button"
+            className="openSOS"
+            onClick={() => {
+              setClick("");
+              setOn("");
+              setMenuText("");
+            }}
+          >
+            <i
+              class="fa-solid fa-hand-holding-medical"
+              style={{ color: "#0d0250" }}
+            ></i>{" "}
+          </button>
+        </div>
+
         <button
           type="button"
           className="openMenu"
@@ -48,7 +71,7 @@ function Header(props) {
             setbarrabrancaVisible("visible");
           }}
         >
-          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-bars" style={{ color: "#0d0250" }}></i>
         </button>
       </div>
 

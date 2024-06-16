@@ -1,15 +1,16 @@
 header {
-  width: 94%;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 4rem 0 0 0;
-  margin: 0 auto;
+  padding: 4vh 5vh;
+  /* margin: 0 auto; */
+  background-color: var(--white);
 }
 
 header a {
   text-decoration: none;
-  color: #fff;
+  color: var(--dark-blue);
 }
 
 header h1 {
@@ -25,29 +26,40 @@ header h1 a {
 
 .logo {
   width: 100%;
-  filter: brightness(0) invert(1);
+  margin-bottom: 25px;
+  transition: all 0.5s ease-in-out;
 }
 
 .logo:hover {
-  filter: brightness(1) invert(0);
+  transform: scale(1.2);
 }
 
 header span {
   font-size: 14px;
   font-weight: 400;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   text-transform: uppercase;
   position: relative;
 }
 
 header span a {
-  color: #fff;
+  color: var(--dark-blue);
 
   transition: color 0.4s ease-in-out;
 }
 
 header span a:hover {
+  color: var(--primary-color);
+}
+
+.sos i {
+  margin-left: 270px;
+  font-size: 23px;
+}
+.sos i:hover {
   color: #6cabff;
+
+  transition: color 0.4s esase-in-out;
 }
 
 header button {
@@ -80,7 +92,7 @@ header button:hover {
   display: flex;
   align-items: center;
   padding-left: 7rem;
-  column-gap: 8vw;
+  column-gap: 5vw;
 }
 
 .inputBoxOff {

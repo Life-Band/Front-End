@@ -11,6 +11,10 @@ html {
   text-decoration: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 :root {
   font-family: "Poppins", sans-serif;
   line-height: 1.5;
@@ -24,6 +28,13 @@ html {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --primary-color: #263fbf;
+  --secondary-color: #0847ea;
+  --dark-blue: #0d0250;
+  --dark-purple: #100e60;
+  --white: #ffffff;
+  --white-blue: #e8f0ff;
 }
 
 body {
@@ -31,6 +42,7 @@ body {
   display: flex;
   width: 100vw;
   height: 100vh;
+  color: var(--white);
 }
 
 h1 {

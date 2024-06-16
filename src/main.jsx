@@ -15,6 +15,7 @@ import HomePosLogin from "./pages/HomePosLogin/HomePosLogin.jsx";
 import LifeClick from "./pages/LifeClick/LifeClick.jsx";
 import "./libs/i18n/configi18n.jsx";
 import "./index.css";
+import Planos from "./pages/Planos/Planos.jsx";
 
 const router = createBrowserRouter([
   {
@@ -64,6 +65,10 @@ const router = createBrowserRouter([
   {
     path: "lifeClick",
     element: <LifeClick />,
+  },
+  {
+    path: "planos",
+    element: <Planos />,
   },
 ]);
 
