@@ -12,6 +12,9 @@ import Henrique from "../../assets/EquipeAssets/Henrique Brandão.png";
 import GeanGomes from "../../assets/EquipeAssets/Gean Gomes.png";
 import PARCEIROS from "../../assets/EquipeAssets/PARCEIROS.png";
 import Footer from "../../components/Footer/Footer";
+import SENAC from "../../assets/EquipeAssets/Senac.png";
+import PROA from "../../assets/EquipeAssets/Proa.png";
+import SABORIA from "../../assets/EquipeAssets/Saboria.png";
 import "./Equipe.css";
 
 function Equipe() {
@@ -98,10 +101,37 @@ function Equipe() {
 
       <h2 className="h2parceiros">Conheça Nossos Parceiros</h2>
 
-      <div className="carrossel">
-        <img className="Parceiros" src={PARCEIROS} alt="Imagem de Parceiros" />
-        <img className="Parceiros2" src={PARCEIROS} alt="Imagem de Parceiros" />
-      </div>
+      <a href="#" class="slider">
+        <div class="slide-track">
+          <div class="slide">
+            <img src={PARCEIROS} />
+          </div>
+          <div class="slide">
+            <img src={PARCEIROS} />
+          </div>
+          <div class="slide">
+            <img src={PARCEIROS} />
+          </div>
+          <div class="slide">
+            <img src={PARCEIROS} />
+          </div>
+          <div class="slide">
+            <img src={PARCEIROS} />
+          </div>
+          <div class="slide">
+            <img src={PARCEIROS} />
+          </div>
+          <div class="slide">
+            <img src={PARCEIROS} />
+          </div>
+          <div class="slide">
+            <img src={PARCEIROS} />
+          </div>
+          <div class="slide">
+            <img src={PARCEIROS} />
+          </div>
+        </div>
+      </a>
 
       <Footer />
     </main>

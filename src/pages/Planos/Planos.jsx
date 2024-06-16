@@ -7,10 +7,10 @@ function Planos() {
   return (
     <main className="TelaPlanos">
       <div className="divPlanos">
-        <a href="/" className="BtnHome">
-          <img src={Home} alt="Botão de Home" />
-        </a>
         <div className="whitePlanos">
+          <a href="/" className="BtnHome">
+            <img src={Home} alt="Botão de Home" />
+          </a>
           <h2 className="h2Planos">Planos da plataforma</h2>
           <div className="dadCards">
             <div className="cardsPlanos">

@@ -23,6 +23,10 @@
   overflow: hidden;
 }
 
+.initial-info {
+  margin-top: 40px;
+}
+
 .initial-info h2 {
   font-size: 3rem;
   text-align: left;
@@ -89,14 +93,15 @@
 .home-about {
   width: 100%;
   height: 100%;
-  background: url("../../assets/HomeAssets/background-about.png");
+  background: url("../../assets/QuemSomosAssets/BG.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
+  gap: 40px;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .about-container {
@@ -106,25 +111,56 @@
   border-radius: 16px;
 }
 
-.about-title h2 {
-  font-size: 60px;
-  font-weight: 200;
-  margin: 25px 0 0 0;
+.about-title {
+  font-size: 80px;
+  text-shadow: 15px 10px 15.1px rgba(0, 0, 0, 0.253);
+  font-weight: bold;
+  letter-spacing: 3px;
 }
 
-.about-texts {
+.about-info {
   display: flex;
   text-align: justify;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
+}
+
+.about-info img {
+  transition: all 0.4s ease-in-out;
+  transform: rotateZ(0) scale(0.9);
+
+  &:hover {
+    transform: rotateZ(-10deg) scale(1.1);
+  }
 }
 
 .about-text {
-  font-size: 1.3rem;
-  font-weight: 300;
+  background: var(--white);
+  color: var(--dark-blue);
+  font-size: 1.4rem;
+  font-weight: 500;
   max-width: 45%;
+  text-align: center;
   line-height: normal;
-  padding: 1rem;
+  padding: 50px 20px;
+  border-radius: 30px;
+}
+
+.about-button {
+  color: var(--secondary-color);
+  background: var(--white);
+  border: 3px solid var(--white);
+  font-size: 24px;
+  font-weight: 700;
+  padding: 10px 30px;
+  border-radius: 24px;
+  transition: all 0.4s ease-in-out;
+
+  &:hover {
+    color: var(--white);
+    background: transparent;
+    transform: translateY(-10px) scale(1.05);
+  }
 }
 
 /*  Vantagens da Pagina Home */
@@ -141,8 +177,8 @@
 }
 
 .home-benefit h2 {
-  margin-top: 5%;
-  font-size: 2.3rem;
+  margin-top: 3%;
+  font-size: 60px;
   font-weight: 300;
 }
 
@@ -248,8 +284,16 @@
 }
 
 .texts-feedback p {
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  color: var(--white);
+  border-top: 3px solid var(--white);
+  border-bottom: 3px solid var(--white);
+  font-size: 2rem;
   margin-top: 5rem;
-  max-width: 350px;
+  padding: 25px 30px;
+  border-radius: 10px;
+  max-width: 500px;
 }
 
 /* ServicesCard */
@@ -272,9 +316,9 @@
 
 .services-title {
   font-weight: 300;
-  font-size: 3.5rem;
+  font-size: 60px;
   color: var(--dark-blue);
-  margin-top: 4%;
+  margin-top: 3%;
   margin-bottom: 4%;
 }
 

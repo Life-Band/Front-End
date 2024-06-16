@@ -13,9 +13,10 @@ import PrimeirosSocorros from "./pages/PrimeirosSocorros/PrimeirosSocorros.jsx";
 import VideosPs from "./pages/VideosPs/VideosPs.jsx";
 import HomePosLogin from "./pages/HomePosLogin/HomePosLogin.jsx";
 import LifeClick from "./pages/LifeClick/LifeClick.jsx";
+import Planos from "./pages/Planos/Planos.jsx";
+import QuemSomos from "./pages/QuemSomos/QuemSomos.jsx";
 import "./libs/i18n/configi18n.jsx";
 import "./index.css";
-import Planos from "./pages/Planos/Planos.jsx";
 
 const router = createBrowserRouter([
   {
@@ -69,6 +70,10 @@ const router = createBrowserRouter([
   {
     path: "planos",
     element: <Planos />,
+  },
+  {
+    path: "quemsomos",
+    element: <QuemSomos />,
   },
 ]);
 

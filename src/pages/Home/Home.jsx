@@ -8,6 +8,7 @@ import Calendar from "../../assets/ServicesAssets/IconeAgenda.png";
 import IconeCoracao from "../../assets/ServicesAssets/IconedoCard.png";
 import Pulseira from "../../assets/ServicesAssets/IconePulseira.png";
 import Footer from "../../components/Footer/Footer";
+import Prancheta from "../../assets/QuemSomosAssets/Prancheta.png";
 import { useTranslation } from "react-i18next";
 import LanguageToggle from "../../components/LangToggle/LangToggle";
 import Carrossel from "../../components/Carrossel/Carrossel";
@@ -28,20 +29,18 @@ function Home() {
       </section>
 
       <section className="home-about" id="sobre">
-        <div className="about-container">
-          <div className="about-title">
-            <h2>{t("SobreNos")}</h2>
-          </div>
+        <h2 className="about-title">QUEM SOMOS</h2>
 
-          <div className="about-texts">
-            <div className="about-text">
-              <p>{t("Texto-Sobre-1")}</p>
-            </div>
-            <div className="about-text">
-              <p>{t("Texto-Sobre-2")}</p>
-            </div>
+        <div className="about-info">
+          <div className="about-text">
+            <p>{t("Texto-Sobre-1")}</p>
           </div>
+          <img src={Prancheta} alt="Prancheta" />
         </div>
+
+        <a href="/quemsomos" className="about-button">
+          SAIBA MAIS
+        </a>
       </section>
 
       <section className="home-benefit" id="vantagens">

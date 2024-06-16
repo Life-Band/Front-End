@@ -4,7 +4,12 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  background: url("../../assets/EquipeAssets/Fundo.jpg");
+  background: linear-gradient(
+    142deg,
+    #0a1760 -7.67%,
+    #1b49c2 38.5%,
+    #0a1760 82.85%
+  );
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -33,38 +38,70 @@
   font-weight: 300;
 }
 
-.carrossel {
-  display: flex;
-  align-items: center;
-  position: relative;
-  /* gap: 700px; */
-  width: 70%;
-  height: 350px;
-  overflow: hidden;
-  margin-top: 50px;
-  margin-bottom: 200px;
-  border-radius: 30px;
-  border-top: 3px solid #fff;
-  border-bottom: 3px solid #fff;
+/* Velocidade da Animação */
+:root {
+  --animationSpeed: 30s;
+}
 
-  .Parceiros {
-    position: absolute;
-    width: 950px;
-    transform: translateX(1400px);
-    animation: imagem 20s infinite;
+/* Keyframes para Animação de Scroll */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
   }
-
-  .Parceiros2 {
-    position: absolute;
-    width: 950px;
-    transform: translateX(1400px);
-    animation: imagem 20s infinite;
-    animation-delay: 10s;
+  100% {
+    transform: translateX(calc(-250px * 7));
   }
 }
 
-@keyframes imagem {
-  100% {
-    transform: translateX(-1100px);
+/* Estilizando */
+.slider {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 300px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 1200px;
+  border-radius: 30px;
+  border-top: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  margin-top: 50px;
+  margin-bottom: 200px;
+
+  img {
+    width: 1200px;
   }
+}
+
+.slide {
+  margin: 0 100px;
+}
+
+.slider::before,
+.slider::after {
+  @extend .white-gradient;
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+.slide-track {
+  animation: scroll var(--animationSpeed) linear infinite;
+  display: flex;
+  width: calc(1200px * 14);
 }
