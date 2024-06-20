@@ -103,31 +103,31 @@ function Equipe() {
 
       <a href="#" class="slider">
         <div class="slide-track">
-          <div class="slide">
+          <div class="slideLogo">
             <img src={PARCEIROS} />
           </div>
-          <div class="slide">
+          <div class="slideLogo">
             <img src={PARCEIROS} />
           </div>
-          <div class="slide">
+          <div class="slideLogo">
             <img src={PARCEIROS} />
           </div>
-          <div class="slide">
+          <div class="slideLogo">
             <img src={PARCEIROS} />
           </div>
-          <div class="slide">
+          <div class="slideLogo">
             <img src={PARCEIROS} />
           </div>
-          <div class="slide">
+          <div class="slideLogo">
             <img src={PARCEIROS} />
           </div>
-          <div class="slide">
+          <div class="slideLogo">
             <img src={PARCEIROS} />
           </div>
-          <div class="slide">
+          <div class="slideLogo">
             <img src={PARCEIROS} />
           </div>
-          <div class="slide">
+          <div class="slideLogo">
             <img src={PARCEIROS} />
           </div>
         </div>

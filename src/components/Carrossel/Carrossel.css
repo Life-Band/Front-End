@@ -11,7 +11,7 @@
 .Carrossel-Section {
   width: 100% !important;
   height: 100% !important;
-  background: #100e60 !important;
+  background: var(--dark-blue) !important;
 }
 
 .Carrossel-Right {
@@ -170,4 +170,92 @@
   top: 100px;
   width: 27vw;
   object-fit: cover;
+}
+
+@media screen and (max-width: 375px) {
+  .slide {
+    margin: 0;
+  }
+
+  .Carrossel-Right {
+    .left-infos {
+      top: 370px;
+      bottom: 300px;
+      right: 0;
+    }
+
+    .left-infos h2 {
+      text-align: center;
+      width: 250px;
+      font-size: 2rem;
+      left: 0;
+    }
+
+    .left-infos a {
+      margin-right: 30px;
+    }
+  }
+
+  .Carrossel-Right2 {
+    .left-infos {
+      top: 370px;
+      bottom: 300px;
+      right: 0;
+    }
+
+    .left-infos h2 {
+      text-align: center;
+      width: 250px;
+      font-size: 1.5rem;
+      left: 0;
+    }
+
+    .left-infos a {
+      margin-right: 30px;
+    }
+  }
+
+  .Carrossel-Left {
+    .left-infos {
+      top: 370px;
+      bottom: 300px;
+      left: 30px;
+    }
+
+    .left-infos h2 {
+      text-align: center;
+      width: 250px;
+      font-size: 2rem;
+      left: 0;
+    }
+
+    .left-infos a {
+      margin-right: 30px;
+    }
+  }
+
+  .IMG1 {
+    left: 45px;
+    top: 150px;
+    width: 60vw;
+    height: 28vh;
+  }
+
+  .IMG2 {
+    left: 80px;
+    top: 160px;
+    width: 40vw;
+  }
+
+  .IMG3 {
+    left: 70px;
+    top: 180px;
+    width: 50vw;
+  }
+
+  .IMG4 {
+    left: 80px;
+    top: 160px;
+    width: 40vw;
+  }
 }
