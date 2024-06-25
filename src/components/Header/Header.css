@@ -36,7 +36,7 @@ header h1 a {
 
 header span {
   font-size: 14px;
-  font-weight: 400;
+
   letter-spacing: 1px;
   text-transform: uppercase;
   position: relative;
@@ -53,7 +53,6 @@ header span a:hover {
 }
 
 .sos i {
-  margin-left: 270px;
   font-size: 23px;
 }
 .sos i:hover {
@@ -91,8 +90,15 @@ header button:hover {
 .header-pages {
   display: flex;
   align-items: center;
-  padding-left: 7rem;
+  padding-left: 5rem;
   column-gap: 5vw;
+
+  span {
+    a {
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+  }
 }
 
 .inputBoxOff {

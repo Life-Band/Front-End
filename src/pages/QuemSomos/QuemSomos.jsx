@@ -11,6 +11,14 @@ import WhiteBlueColor from "../../assets/QuemSomosAssets/WhiteBlueColor.png";
 import Missao from "../../assets/QuemSomosAssets/Missao.png";
 import Visao from "../../assets/QuemSomosAssets/Visao.png";
 import Valores from "../../assets/QuemSomosAssets/Valores.png";
+import Relacionamento from "../../assets/QuemSomosAssets/Relacionamento.png";
+import Solucoes from "../../assets/QuemSomosAssets/Solucoes.png";
+import Agilidade from "../../assets/QuemSomosAssets/Agilidade.png";
+import ZURI from "../../assets/QuemSomosAssets/ZURI.png";
+import Atualizacoes from "../../assets/QuemSomosAssets/Atualizações.png";
+import Hospitais from "../../assets/QuemSomosAssets/Hospitais.png";
+import Pulseira from "../../assets/QuemSomosAssets/Pulseira.png";
+import Footer from "../../components/Footer/Footer";
 import { useTranslation } from "react-i18next";
 
 function QuemSomos() {
@@ -79,7 +87,6 @@ function QuemSomos() {
           </p>
         </div>
       </section>
-
       <section className="QS-Logo">
         <h2 className="QS-title">Logo da Life Band</h2>
 
@@ -133,6 +140,58 @@ function QuemSomos() {
           </div>
         </div>
       </section>
+      <section className="sectionComunidade">
+        <h2 className="h2Comunidade">Impactos para a comunidade</h2>
+        <div className="comunidadPai">
+          <div className="imgSolucoes">
+            <img src={Solucoes} alt="Solucoes" />
+            <h2>
+              Soluções <br />
+              Tecnologicas
+            </h2>
+          </div>
+          <div className="imgAgilidade">
+            <img src={Agilidade} alt="Agilidade" />
+            <h2>
+              Bom relacionamento <br />
+              entre médicos e <br />
+              pacientes
+            </h2>
+          </div>
+          <div className="imgRelacionamento">
+            <img src={Relacionamento} alt="Relacionamento" />
+            <h2>
+              Agilidade no <br /> Atendimento
+            </h2>
+          </div>
+        </div>
+      </section>
+      <section className="Qs-ProximosPassos">
+        <h2 className="h2Passos">Próximos Passos</h2>
+        <div className="container-box-implementacoes">
+          <div className="box-implementacoes">
+            <img src={ZURI} alt="" />
+
+            <p className="futuroZuri">
+              Implementação de inteligência artificial na Zuri
+            </p>
+          </div>
+          <div className="box-implementacoes">
+            <img src={Pulseira} alt="" />
+            <p className="futuroLeft">Aprimoramentos da pulseira Life Click</p>
+          </div>
+          <div className="box-implementacoes">
+            <img src={Atualizacoes} alt="" />
+
+            <p className="futuroRight">Atualizações no sistema</p>
+          </div>
+          <div className="box-implementacoes">
+            <img src={Hospitais} alt="" />
+            <p className="futuroLeft">Implementação em Hospitais Públicos</p>
+          </div>
+        </div>
+      </section>
+      <Footer />
     </main>
   );
 }

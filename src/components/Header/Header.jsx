@@ -57,7 +57,7 @@ function Header(props) {
             <i
               class="fa-solid fa-hand-holding-medical"
               style={{ color: "#0d0250" }}
-            ></i>{" "}
+            ></i>
           </button>
         </div>
 
