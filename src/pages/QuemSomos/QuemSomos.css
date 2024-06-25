@@ -21,34 +21,41 @@
   margin-bottom: 50px;
 }
 
-.QS-info {
-  position: relative;
-  width: 100%;
+.Mission-Container {
   display: flex;
-  text-align: justify;
-  align-items: center;
-  justify-content: space-evenly;
-}
+  flex-direction: column;
+  text-align: left;
+  width: 100%;
+  padding: 80px;
+  padding-bottom: 0;
 
-.QS-info img {
-  transition: all 0.4s ease-in-out;
-  transform: rotateZ(0) scale(0.8);
+  div {
+    display: flex;
+    align-items: center;
+  }
 
-  &:hover {
-    transform: rotateZ(-10deg) scale(0.9);
+  p {
+    font-size: 2rem;
+    font-weight: 300;
+    padding: 40px 50px;
+  }
+
+  h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 0 50px;
+    padding-top: 40px;
   }
 }
 
-.QS-text {
-  background: var(--white);
-  color: var(--dark-blue);
-  font-size: 1.4rem;
-  font-weight: 500;
-  max-width: 45%;
-  text-align: center;
-  line-height: normal;
-  padding: 50px 20px;
-  border-radius: 30px;
+.Icon-Mission {
+  width: 120px;
+}
+
+.Title-Mission {
+  font-size: 4rem;
+  margin-left: 30px;
+  border-bottom: 4px solid white;
 }
 
 /*  LOGO DA LIFE BAND */
@@ -96,6 +103,7 @@
 
 .QS-ColorsGroup {
   margin-top: 100px;
+  padding-bottom: 400px;
   display: flex;
   width: 100%;
   justify-content: space-evenly;
@@ -111,21 +119,88 @@
       font-weight: 700;
     }
 
-    div.white {
+    div.white1 {
       display: flex;
       align-items: center;
       justify-content: center;
       background: var(--white);
+      border: 2px solid var(--white);
       width: 220px;
       height: 220px;
       border-radius: 100%;
+      cursor: pointer;
+
+      transition: all 0.6s ease-in-out;
+
+      &:hover {
+        background: var(--primary-color);
+        transform: translateY(-10px);
+
+        img {
+          filter: brightness(0) invert(1);
+        }
+      }
 
       img {
         width: 130px;
       }
     }
 
-    div.black {
+    div.white2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--white);
+      border: 2px solid var(--white);
+      width: 220px;
+      height: 220px;
+      border-radius: 100%;
+      cursor: pointer;
+
+      transition: all 0.6s ease-in-out;
+
+      &:hover {
+        background: #0847ea;
+        transform: translateY(-10px);
+
+        img {
+          filter: brightness(0) invert(1);
+        }
+      }
+
+      img {
+        width: 130px;
+      }
+    }
+
+    div.white3 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--white);
+      border: 2px solid var(--white);
+      width: 220px;
+      height: 220px;
+      border-radius: 100%;
+      cursor: pointer;
+
+      transition: all 0.6s ease-in-out;
+
+      &:hover {
+        background: #0d0250;
+        transform: translateY(-10px);
+
+        img {
+          filter: brightness(0) invert(1);
+        }
+      }
+
+      img {
+        width: 130px;
+      }
+    }
+
+    div.black1 {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -133,6 +208,42 @@
       width: 220px;
       height: 220px;
       border-radius: 100%;
+
+      transition: all 0.6s ease-in-out;
+
+      &:hover {
+        background: var(--white);
+        transform: translateY(-10px);
+
+        img {
+          filter: brightness(0);
+        }
+      }
+
+      img {
+        width: 130px;
+      }
+    }
+
+    div.black2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #202223;
+      width: 220px;
+      height: 220px;
+      border-radius: 100%;
+
+      transition: all 0.6s ease-in-out;
+
+      &:hover {
+        background: #e8f0ff;
+        transform: translateY(-10px);
+
+        img {
+          filter: brightness(0);
+        }
+      }
 
       img {
         width: 130px;

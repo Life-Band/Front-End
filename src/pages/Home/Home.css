@@ -322,7 +322,6 @@
     border-radius: 50px 0 0 50px;
   }
   .home-initial {
-    background: url("../../assets/HomeAssets/background-inicio-mobile.jpg");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
