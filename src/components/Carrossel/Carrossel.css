@@ -172,6 +172,27 @@
   object-fit: cover;
 }
 
+@media screen and (max-width: 1372px) {
+  .Carrossel-Right2 .left-infos h2 {
+    font-size: 3.5rem;
+  }
+  .Carrossel-Left .left-infos h2 {
+    font-size: 3.5rem;
+  }
+  .initial-info {
+    margin-top: 50px;
+  }
+  .slide {
+    margin: 0;
+  }
+  .IMG2 {
+    width: 23vw;
+  }
+  .Carrossel-Right .left-infos h2 {
+    font-size: 3rem;
+  }
+}
+
 @media screen and (max-width: 575px) {
   .slide {
     margin: 0;

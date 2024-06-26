@@ -103,16 +103,19 @@ function Home() {
         <div className="Container-Service">
           <Services
             icons={Calendar}
+            link="/login"
             description={t("Serviços-C1-Text")}
             title={t("Serviços-C1-Title")}
           />
           <Services
             icons={IconeCoracao}
+            link="/videosps"
             description={t("Serviços-C2-Text")}
             title={t("Serviços-C2-Title")}
           />
           <Services
             icons={Pulseira}
+            link="/pulseira"
             description={t("Serviços-C3-Text")}
             title={t("Serviços-C3-Title")}
           />

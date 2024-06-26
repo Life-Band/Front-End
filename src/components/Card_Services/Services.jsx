@@ -13,7 +13,7 @@ const Services = (props) => {
         <h2 className="title-Services">{props.title}</h2>
         <p className="description-service">{props.description}</p>
         <hr className="divisor-description" />
-        <a className="maisInfo" href="">
+        <a className="maisInfo" href={props.link}>
           {t("SaibaMais")}
         </a>
       </div>

@@ -9,7 +9,6 @@ import Pulseira from "./pages/Pulseira/Pulseira";
 import Contato from "./pages/Contato/Contato.jsx";
 import Equipe from "./pages/Equipe/Equipe.jsx";
 import Zuri from "./pages/AssistenteZuri/AssistenteZuri.jsx";
-import PrimeirosSocorros from "./pages/PrimeirosSocorros/PrimeirosSocorros.jsx";
 import VideosPs from "./pages/VideosPs/VideosPs.jsx";
 import HomePosLogin from "./pages/HomePosLogin/HomePosLogin.jsx";
 import LifeClick from "./pages/LifeClick/LifeClick.jsx";
@@ -46,10 +45,6 @@ const router = createBrowserRouter([
   {
     path: "zuri",
     element: <Zuri />,
-  },
-  {
-    path: "primeirossocorros",
-    element: <PrimeirosSocorros />,
   },
   {
     path: "cadPaciente",

@@ -149,7 +149,7 @@ header button:hover {
 }
 
 .divisorOpen {
-  background: rgba(255, 255, 255, 0.247);
+  background: rgba(36, 35, 35, 0.247);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(30.1px);
@@ -209,11 +209,11 @@ header button:hover {
 
 .socialIcons a {
   color: #fff;
-  transition: color 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
 }
 
 .socialIcons a:hover {
-  color: #003f92;
+  transform: scale(1.2);
 }
 
 .menuTextOff {
@@ -229,11 +229,13 @@ header button:hover {
   font-size: 1.3rem;
   margin-right: 10px;
   opacity: 0;
+
   gap: 40px;
   animation: content 1s ease-in-out forwards;
 }
 
 .menuText a {
+  color: var(--white);
   transition: color 0.4s ease-in-out;
 }
 
@@ -248,6 +250,11 @@ header button:hover {
 
 .notVisible {
   display: none;
+}
+
+.beacons-icon {
+  width: 45px;
+  margin-bottom: 5px;
 }
 
 @keyframes content {

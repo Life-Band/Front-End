@@ -7,8 +7,7 @@ main.pulseira {
   height: 100%;
   overflow-x: hidden;
   position: relative;
-  background: url("../../assets/PulseiraAssets/BG.jpg");
-
+  background: linear-gradient(175deg, #050506 0%, #001065 73.79%);
   background-size: cover;
   background-position: bottom;
 }

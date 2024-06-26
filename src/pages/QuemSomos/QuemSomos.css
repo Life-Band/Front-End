@@ -8,6 +8,7 @@
 }
 
 .QS-about {
+  position: relative;
   display: flex;
   flex-direction: column;
 }
@@ -68,8 +69,13 @@
 }
 
 .QS-LogoImg {
-  width: 800px;
-  margin-top: 100px;
+  width: 600px;
+  margin-top: 30px;
+  transition: all 0.4s ease-in-out;
+
+  &:hover {
+    transform: scale(1.08);
+  }
 }
 
 .QS-LogoText {
@@ -80,7 +86,7 @@
   justify-content: center;
   font-size: 32px;
   font-weight: 600;
-  gap: 370px;
+  gap: 220px;
 
   p {
     width: 260px;
@@ -252,6 +258,8 @@
   }
 }
 
+/*  IMPACTOS PARA A COMUNIDADE */
+
 .h2Comunidade {
   font-size: 80px;
   text-shadow: 15px 10px 15.1px rgba(0, 0, 0, 0.253);
@@ -260,35 +268,72 @@
   margin-top: 50px;
   margin-bottom: 300px;
 }
+
 .comunidadPai {
   display: flex;
   gap: 70px;
+  margin-right: 35px;
   align-items: center;
   justify-content: center;
 }
 
 .imgSolucoes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   transform: translateY(-190px);
   margin: 10px;
-  h2 {
-    font-weight: 300;
-    margin-left: 40px;
-  }
-}
 
-.imgAgilidade {
+  img {
+    width: 22vw;
+  }
+
   h2 {
+    width: 300px;
     font-weight: 300;
-    margin-left: 40px;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 60px;
   }
 }
 
 .imgRelacionamento {
-  transform: translateY(-190px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 22vw;
+  }
 
   h2 {
+    width: 400px;
     font-weight: 300;
-    margin-left: 40px;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 70px;
+  }
+}
+
+.imgAgilidade {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-190px);
+
+  img {
+    width: 22vw;
+  }
+
+  h2 {
+    width: 300px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 70px;
   }
 }
 
@@ -300,45 +345,35 @@
   }
 }
 
-.box-implementacoes {
-  position: relative;
-  margin: 25px auto;
+.container-box-implementacoes {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  transform: scale(1.2);
+  margin: 100px;
+}
 
-  width: 100%;
-  max-width: 350px;
-  height: 100%;
-  max-height: 150px;
-  border-radius: 25px;
-  background-color: transparent;
+.box-implementacoes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 30vw;
+  background: var(--white);
+  border-radius: 43px;
+  overflow: hidden;
 
-  p.futuroRight {
-    position: absolute;
-    top: 6vh;
-    right: -2vw;
-    color: #0847ea;
-    font-weight: 700;
-    text-align: left;
-    width: 190px;
+  img {
+    width: 150px;
+    transform: translateX(-2px) scale(1.01);
   }
 
-  p.futuroZuri {
-    position: absolute;
-    top: 4vh;
-    right: -2vw;
-    color: #0847ea;
-    font-weight: 700;
+  p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    width: 200px;
     text-align: left;
-    width: 190px;
-  }
-
-  p.futuroLeft {
-    position: absolute;
-    top: 6vh;
-    left: 5vw;
-    color: #0847ea;
-    font-weight: 700;
-    text-align: left;
-    width: 190px;
+    margin-right: 55px;
+    color: var(--primary-color);
   }
 }

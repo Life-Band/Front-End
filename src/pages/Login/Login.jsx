@@ -1,15 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Login.css";
 import Logo from "../../assets/LoginAssets/Logo.png";
 import FirstKit from "../../assets/LoginAssets/FirstKit.png";
 import Arrow from "../../assets/LoginAssets/Seta.png";
 import EyeSlash from "../../assets/LoginAssets/Eye-Slash.png";
+import Eye from "../../assets/CadastroAssets/Eye.png";
 import { Link } from "react-router-dom";
 
 function Login() {
+  const [viewPassword, setViewPassword] = useState("password");
+  const [switchEye, setSwitchEye] = useState(EyeSlash);
+
   return (
     <main className="main-container">
-      <div className="container">
+      <div className="container-login">
         <Link to="/">
           <img className="logo-login" src={Logo} alt="Imagem do Logo " />
         </Link>
@@ -32,27 +36,36 @@ function Login() {
                 required
               />
             </div>
-            <div className="container-dad">
-              <div>
+            <div className="inputs-boxes">
+              <div className="input-senha-box">
                 <input
                   className="input-senha"
-                  type="password"
+                  type={viewPassword}
                   placeholder="Senha"
                   required
                 />
-                <button className="eye-slash">
-                  <img src={EyeSlash} />
+                <button
+                  className="eye-slash"
+                  onClick={() => {
+                    if (viewPassword === "password") {
+                      setViewPassword("text");
+                      setSwitchEye(Eye);
+                    } else {
+                      setViewPassword("password");
+                      setSwitchEye(EyeSlash);
+                    }
+                  }}
+                >
+                  <img src={switchEye} />
                 </button>
               </div>
-              <div input-cpf>
-                <input
-                  className="input-cpf"
-                  type="text"
-                  placeholder="CPF"
-                  maxLength="11"
-                  required
-                />
-              </div>
+              <input
+                className="input-cpf"
+                type="text"
+                placeholder="CPF"
+                maxLength="11"
+                required
+              />
             </div>
             <button className="input-btn" type="submit">
               Entrar

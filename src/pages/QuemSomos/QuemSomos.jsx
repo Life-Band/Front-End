@@ -26,8 +26,8 @@ function QuemSomos() {
 
   return (
     <main className="QuemSomos-Container">
-      <Header use="notVisible" />
       <section className="QS-about">
+        <Header use="notVisible" />
         <div className="Mission-Container">
           <div>
             <img className="Icon-Mission" src={Missao} alt="Estrela" />
@@ -145,49 +145,40 @@ function QuemSomos() {
         <div className="comunidadPai">
           <div className="imgSolucoes">
             <img src={Solucoes} alt="Solucoes" />
-            <h2>
-              Soluções <br />
-              Tecnologicas
-            </h2>
-          </div>
-          <div className="imgAgilidade">
-            <img src={Agilidade} alt="Agilidade" />
-            <h2>
-              Bom relacionamento <br />
-              entre médicos e <br />
-              pacientes
-            </h2>
+            <h2>Soluções Tecnologicas</h2>
           </div>
           <div className="imgRelacionamento">
-            <img src={Relacionamento} alt="Relacionamento" />
-            <h2>
-              Agilidade no <br /> Atendimento
-            </h2>
+            <img src={Relacionamento} alt="Agilidade" />
+            <h2>Bom relacionamento entre médicos e pacientes</h2>
+          </div>
+          <div className="imgAgilidade ">
+            <img src={Agilidade} alt="Relacionamento" />
+            <h2>Agilidade no Atendimento</h2>
           </div>
         </div>
       </section>
       <section className="Qs-ProximosPassos">
-        <h2 className="h2Passos">Próximos Passos</h2>
+        <h2 className="QS-title">Próximos Passos</h2>
         <div className="container-box-implementacoes">
-          <div className="box-implementacoes">
-            <img src={ZURI} alt="" />
-
-            <p className="futuroZuri">
-              Implementação de inteligência artificial na Zuri
-            </p>
+          <div>
+            <div className="box-implementacoes">
+              <img src={ZURI} />
+              <p>Implementação de inteligência artificial na Zuri</p>
+            </div>
+            <div className="box-implementacoes">
+              <img src={Pulseira} />
+              <p>Aprimoramentos da pulseira Life Click</p>
+            </div>
           </div>
-          <div className="box-implementacoes">
-            <img src={Pulseira} alt="" />
-            <p className="futuroLeft">Aprimoramentos da pulseira Life Click</p>
-          </div>
-          <div className="box-implementacoes">
-            <img src={Atualizacoes} alt="" />
-
-            <p className="futuroRight">Atualizações no sistema</p>
-          </div>
-          <div className="box-implementacoes">
-            <img src={Hospitais} alt="" />
-            <p className="futuroLeft">Implementação em Hospitais Públicos</p>
+          <div>
+            <div className="box-implementacoes">
+              <img src={Atualizacoes} />
+              <p>Atualizações no sistema</p>
+            </div>
+            <div className="box-implementacoes">
+              <img src={Hospitais} />
+              <p>Implementação em Hospitais Públicos</p>
+            </div>
           </div>
         </div>
       </section>
