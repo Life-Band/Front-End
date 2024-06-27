@@ -14,7 +14,7 @@ function Pulseira() {
 
   return (
     <main className="pulseira">
-      <Header use="notVisible" className="pulseira-header" />
+      <Header use="notVisible" />
       <LanguageToggle />
       <h2 className="pulseira">{t("PulseiraNome")}</h2>
       <p className="paragrafo-pulseira">{t("PulseiraMainText")}</p>

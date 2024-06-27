@@ -26,8 +26,8 @@ function QuemSomos() {
 
   return (
     <main className="QuemSomos-Container">
+      <Header use="notVisible" />
       <section className="QS-about">
-        <Header use="notVisible" />
         <div className="Mission-Container">
           <div>
             <img className="Icon-Mission" src={Missao} alt="Estrela" />

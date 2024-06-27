@@ -1,7 +1,8 @@
 .QuemSomos-Container {
-  position: relative;
   width: 100%;
-  min-height: 380vh;
+  height: 100%;
+  overflow-x: hidden;
+  position: relative;
   background: url(../../assets/QuemSomosAssets/Background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -375,5 +376,228 @@
     text-align: left;
     margin-right: 55px;
     color: var(--primary-color);
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .QS-Hand {
+    margin-top: 50px;
+    width: 800px;
+  }
+  .QS-ColorsGroup {
+    flex-wrap: wrap;
+  }
+  .comunidadPai {
+    gap: 0;
+    margin-right: 5%;
+  }
+  .comunidadPai img {
+    width: 310px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .QS-title {
+    font-size: 60px;
+    letter-spacing: 1px;
+  }
+  .Title-Mission {
+    font-size: 40px;
+  }
+  .Mission-Container p {
+    font-size: 1.5rem;
+  }
+  .Icon-Mission {
+    width: 100px;
+  }
+  .QS-Colors .QS-title {
+    font-size: 3.5rem;
+  }
+  .QS-ColorsGroup {
+    gap: 30px;
+  }
+  .QS-ColorsGroup .ColorDiv div.white1,
+  .QS-ColorsGroup .ColorDiv div.white2,
+  .QS-ColorsGroup .ColorDiv div.white3,
+  .QS-ColorsGroup .ColorDiv div.black1,
+  .QS-ColorsGroup .ColorDiv div.black2 {
+    width: 190px;
+    height: 190px;
+  }
+  .QS-ColorsGroup .ColorDiv div.white1 img,
+  .QS-ColorsGroup .ColorDiv div.white2 img,
+  .QS-ColorsGroup .ColorDiv div.white3 img,
+  .QS-ColorsGroup .ColorDiv div.black1 img,
+  .QS-ColorsGroup .ColorDiv div.black2 img {
+    width: 100px;
+  }
+  .h2Comunidade {
+    font-size: 40px;
+  }
+  .comunidadPai img {
+    width: 230px;
+  }
+  .Qs-ProximosPassos h2 {
+    font-size: 2.9rem;
+  }
+  .QS-text {
+    font-size: 1.23rem;
+    padding: 35px 15px;
+    border-radius: 25px;
+  }
+  .QS-info img {
+    width: 350px;
+  }
+  .QS-Logo {
+    width: 90%;
+  }
+  .QS-Logo .QS-LogoImg {
+    width: 600px;
+    margin-left: 25px;
+  }
+  .QS-LogoText {
+    gap: 300px;
+    font-size: 22px;
+    margin-left: 20px;
+  }
+  .QS-Hand {
+    margin-top: 80px;
+    margin-right: -150px;
+    width: 700px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .Title-Mission {
+    font-size: 35px;
+  }
+  .Mission-Container p {
+    font-size: 1.27rem;
+  }
+  .Icon-Mission {
+    width: 75px;
+  }
+  .QS-title {
+    font-size: 50px;
+    letter-spacing: 1px;
+    margin-left: 5%;
+  }
+  .QS-Logo .QS-LogoImg {
+    width: 500px;
+    margin-left: 25px;
+  }
+  .QS-LogoText {
+    gap: 250px;
+    font-size: 19px;
+    margin-left: 20px;
+  }
+  .QS-LogoText p {
+    width: 150px;
+  }
+  .QS-Hand {
+    margin-top: 80px;
+    margin-right: -150px;
+    width: 600px;
+  }
+  .QS-Colors .QS-title {
+    font-size: 2.9rem;
+  }
+  .QS-ColorsGroup .ColorDiv div.white1,
+  .QS-ColorsGroup .ColorDiv div.white2,
+  .QS-ColorsGroup .ColorDiv div.white3,
+  .QS-ColorsGroup .ColorDiv div.black1,
+  .QS-ColorsGroup .ColorDiv div.black2 {
+    width: 150px;
+    height: 150px;
+  }
+  .QS-ColorsGroup .ColorDiv div.white1 img,
+  .QS-ColorsGroup .ColorDiv div.white2 img,
+  .QS-ColorsGroup .ColorDiv div.white3 img,
+  .QS-ColorsGroup .ColorDiv div.black1 img,
+  .QS-ColorsGroup .ColorDiv div.black2 img {
+    width: 80px;
+  }
+  .QS-Colors .QS-ColorsGroup {
+    padding-bottom: 100px;
+  }
+  .QS-ColorsGroup .ColorDiv h3 {
+    font-size: 23px;
+  }
+  .h2Comunidade {
+    margin-top: 0;
+    margin-bottom: 100px;
+  }
+  .comunidadPai {
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+  .comunidadPai .imgSolucoes {
+    transform: translateY(0px);
+  }
+  .comunidadPai .imgRelacionamento {
+    transform: translateY(0px);
+  }
+}
+@media screen and (max-width: 428px) {
+  .Title-Mission {
+    font-size: 28px;
+    margin-top: 59px;
+  }
+  .Mission-Container {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+  .Mission-Container p {
+    font-size: 1.2rem;
+  }
+  .Icon-Mission {
+    width: 55px;
+    margin-left: 40px;
+    margin-top: 50px;
+  }
+  .QS-title {
+    font-size: 38px;
+  }
+  .QS-Logo .QS-LogoImg {
+    width: 300px;
+    margin-left: 25px;
+    margin-top: 50px;
+  }
+  .QS-LogoText {
+    gap: 150px;
+    font-size: 17px;
+    margin-left: 20px;
+  }
+  .QS-Hand {
+    margin-top: 80px;
+    margin-right: -150px;
+    width: 435px;
+  }
+  .QS-Colors .QS-title {
+    font-size: 2.5rem;
+  }
+  .h2Comunidade {
+    font-size: 35px;
+    margin-bottom: 100px;
+  }
+  .QS-ColorsGroup {
+    margin-top: 0;
+    padding: 100px;
+  }
+  .Qs-ProximosPassos h2 {
+    font-size: 2.3rem;
+    margin-bottom: 5rem;
+  }
+  .box-implementacoes img {
+    width: 330px;
+  }
+  .box-implementacoes p.futuroZuri {
+    top: 3vh;
+    right: 5vw;
+  }
+  .box-implementacoes p.futuroLeft,
+  .box-implementacoes p.futuroRight {
+    top: 4vh;
+    right: 5vw;
   }
 }
