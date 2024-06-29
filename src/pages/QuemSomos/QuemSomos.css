@@ -105,6 +105,9 @@
   margin-top: 10px;
   width: 1000px;
 }
+.QS-Colors .QS-title{
+  margin-top: 300px;
+}
 
 /*  CORES DO NOSSO SISTEMA */
 
@@ -378,6 +381,25 @@
     color: var(--primary-color);
   }
 }
+.container-box-implementacoes div{
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 1400px) {
+  .QS-Colors .QS-title{
+    margin-top: 350px;
+  }
+  .QS-Hand {
+    margin-top: 100px;
+    width: 800px;
+  }
+  .box-implementacoes img{
+    width: 120px;
+  }
+  .box-implementacoes p{
+    font-size: 1rem;
+
+  }
+}
 
 @media screen and (max-width: 1250px) {
   .QS-Hand {
@@ -394,8 +416,20 @@
   .comunidadPai img {
     width: 310px;
   }
+  .QS-Colors .QS-title{
+    margin-top: 350px;
+  }
+  .container-box-implementacoes div{
+    margin-bottom: 50px;
+  }
+  .box-implementacoes{
+    border-radius: 35px;
+  }
+  .box-implementacoes p{
+    margin-left: 10px;
+  }
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1150px) {
   .QS-title {
     font-size: 60px;
     letter-spacing: 1px;
@@ -411,6 +445,34 @@
   }
   .QS-Colors .QS-title {
     font-size: 3.5rem;
+    margin-top: 250px;
+  }
+  .comunidadPai{
+    gap: 85px;
+  }
+  .comunidadPai .imgSolucoes img,
+  .comunidadPai .imgRelacionamento img,
+  .comunidadPai .imgAgilidade img{
+    width: 200px;
+  } 
+  .comunidadPai .imgSolucoes ,
+  .comunidadPai .imgRelacionamento ,
+  .comunidadPai .imgAgilidade{
+    width: 200px;
+  }
+  .comunidadPai .imgSolucoes h2,
+  .comunidadPai .imgRelacionamento h2,
+  .comunidadPai .imgAgilidade h2{
+    font-size: 25px;;
+  }
+  .box-implementacoes p{
+    font-size: 0.9rem;
+  }
+  .box-implementacoes img{
+    width: 105px;
+  }
+  .container-box-implementacoes div {
+    margin-bottom: 30px;
   }
   .QS-ColorsGroup {
     gap: 30px;
@@ -420,21 +482,21 @@
   .QS-ColorsGroup .ColorDiv div.white3,
   .QS-ColorsGroup .ColorDiv div.black1,
   .QS-ColorsGroup .ColorDiv div.black2 {
-    width: 190px;
-    height: 190px;
+    width: 180px;
+    height: 180px;
   }
   .QS-ColorsGroup .ColorDiv div.white1 img,
   .QS-ColorsGroup .ColorDiv div.white2 img,
   .QS-ColorsGroup .ColorDiv div.white3 img,
   .QS-ColorsGroup .ColorDiv div.black1 img,
   .QS-ColorsGroup .ColorDiv div.black2 img {
-    width: 100px;
+    width: 90px;
   }
   .h2Comunidade {
     font-size: 40px;
   }
   .comunidadPai img {
-    width: 230px;
+    width: 200px;
   }
   .Qs-ProximosPassos h2 {
     font-size: 2.9rem;
@@ -499,6 +561,7 @@
   }
   .QS-Colors .QS-title {
     font-size: 2.9rem;
+    margin-top: 100px;
   }
   .QS-ColorsGroup .ColorDiv div.white1,
   .QS-ColorsGroup .ColorDiv div.white2,
@@ -535,6 +598,29 @@
   }
   .comunidadPai .imgRelacionamento {
     transform: translateY(0px);
+  }
+  .comunidadPai .imgAgilidade{
+    transform: translateY(0px);
+  }
+  .container-box-implementacoes {
+    flex-direction: column;
+    gap: 0;
+  }
+  .box-implementacoes{
+    width: 50vw;
+    border-radius: 35px;
+  }
+  div.box-implementacoes{
+    margin-bottom: 10px;
+  }
+  .box-implementacoes p{
+    margin-left: 15px;
+  }
+  .container-box-implementacoes div {
+    margin-bottom: 0;
+  }
+  div.box-implementacoes{
+    margin-bottom: 30px;
   }
 }
 @media screen and (max-width: 428px) {
@@ -584,6 +670,13 @@
     margin-top: 0;
     padding: 100px;
   }
+  .comunidadPai .imgRelacionamento h2,
+  .comunidadPai .imgSolucoes h2,
+  .comunidadPai .imgAgilidade h2
+  {
+    margin-left: 0;
+    font-size: 1.5rem;
+  }
   .Qs-ProximosPassos h2 {
     font-size: 2.3rem;
     margin-bottom: 5rem;
@@ -599,5 +692,11 @@
   .box-implementacoes p.futuroRight {
     top: 4vh;
     right: 5vw;
+  }.box-implementacoes{
+    width: 65vw;
+  }
+  
+  .box-implementacoes img{
+    width: 100px;
   }
 }
