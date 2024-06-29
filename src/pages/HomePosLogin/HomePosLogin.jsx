@@ -14,13 +14,13 @@ function HomePosLogin() {
 
         <div className="Container-Cards">
           <div className="agenda-Paciente">
+        
             <div className="agendamentos-title">
               <img className="icon-pulseira" src={IconAgendamento} alt="" />
               <h2 className="title-H2-Cards">AGENDA</h2>
             </div>
-
-            <p className="agendamentos-Paciente">Sem agendamentos</p>
-            <button className="botao-Agendamento">FAZER AGENDAMENTO</button>
+              <p className="agendamentos-Paciente">Sem agendamentos</p>
+              <a href="/cadAgendamentos" className="botao-Agendamento">FAZER AGENDAMENTO</a>
           </div>
 
           <div className="pulseira-Paciente">

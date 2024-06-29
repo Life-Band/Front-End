@@ -22,19 +22,19 @@ function HeaderLogin() {
         </h1>
         <nav className="header-login-pages">
           <span>
-            <a href="/">{t("Inicio")}</a>
+            <a href="/posLogin">{t("Inicio")}</a>
           </span>
           <span>
             <a href="/primeirossocorros">{t("Videos")}</a>
           </span>
           <span>
-            <a href="#">Zuri</a>
+            <a href="/zuri">{t("Zuri")}</a>
           </span>
           <span>
-            <a href="#">Agendamentos</a>
+            <a href="/cadAgendamentos">{t("Agendamentos")}</a>
           </span>
           <span>
-            <a href="#">Pulseira</a>
+            <a href="/pulseira">{t("Pulseira")}</a>
           </span>
         </nav>
       </div>

@@ -67,9 +67,11 @@ function Login() {
                 required
               />
             </div>
+            <Link to = "/posLogin">
             <button className="input-btn" type="submit">
               Entrar
             </button>
+            </Link>
           </div>
         </div>
       </div>

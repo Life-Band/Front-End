@@ -1,0 +1,136 @@
+.Bg-CadAgendamentos {
+    width: 100vw;
+    height: 100vh;
+    background: var(--dark-blue);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    position: relative;
+}
+
+.offAgenda {
+    display: none;
+}
+
+.cardFacaAgend{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 80vw;
+    height: 75vh;
+    border-radius: 5vw;
+    background-color: var(--white-blue);
+    padding: 7vh 5vw;
+
+    h2{
+        color: var(--dark-blue);
+        font-weight: 500;
+        font-size: 3vw;
+    }
+}
+
+.topCadAgendamentos {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.confirmarAgendamento{
+    position: absolute;
+    bottom: 4vh;
+    width: 20vw;
+    height: 6vh;
+    font-size: 1.4vw;
+    border-radius: 1vw;
+    border: none;
+    background-color: var(--dark-blue);
+    opacity: 0.5;
+    color: #fff;
+    
+    transition: color 0.40s ease-in-out, background 0.40s ease-in-out, border 0.40s ease-in-out, scale 0.1s ease-in-out;
+
+    &:hover{
+        color: var(--dark-blue);
+        background: var(--white-blue);
+        border: 1px solid var(--dark-blue);
+    }
+
+    &:active{
+        scale: 0.95;
+    }
+}
+
+.btnCadAgendamentos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--white);
+    width: 25vw;
+    border-radius: 3vw;
+    padding: 1.9vw;
+    height: 7vh;
+}
+
+.btnCadAgendamentosOpen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--white);
+    width: 25vw;
+    border-radius: 3vw;
+    padding: 1.9vw;
+    height: 30vh;
+    gap: 2vh;
+}
+
+.optionsCadAgendamentos{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    width: 100%;
+
+    &:hover {
+        button{
+            opacity: 0.7;
+        }
+    
+        i {
+            opacity: 0.5;
+            transform: rotateZ(0deg);
+        }
+    }
+
+    button{
+        border: none;
+        background: transparent;
+        color: #000;
+        opacity: 0.6;
+        font-size: 1.5vw;
+        transition: all 0.4s ease-in-out;
+    }
+
+    i {
+        color: #000;
+        opacity: 0.4;
+        font-size: 1.5vw;
+        transform: rotateZ(90deg);
+        transition: all 0.4s ease-in-out;
+    }
+}
+
+.optionCadAgendamentos {
+    border: none;
+    background: transparent;
+    color: #000;
+    opacity: 0.4;
+    font-size: 1.5vw;
+    transition: all 0.4s ease-in-out;
+    width: 100%;
+    text-align: left;
+}

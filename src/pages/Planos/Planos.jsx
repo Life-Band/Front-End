@@ -18,7 +18,7 @@ function Planos() {
               <h2 className="planoSistema">
                 Sistema <br /> Life Band
               </h2>
-              <p className="Negocie">
+              <p className="Negocie1">
                 Negocie conosco
                 <br />
                 Clicando aqui!
@@ -42,9 +42,9 @@ function Planos() {
                 Pulseira <br /> Life Click
               </h2>
               <p className="Negocie">
-                Negocie conosco
+                Plano individual
                 <br />
-                Clicando aqui!
+                <b>R$ 49,90/Mês</b>
               </p>
             </div>
           </div>

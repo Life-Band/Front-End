@@ -82,7 +82,13 @@
 
   .Negocie {
     color: var(---white);
-    padding: 15px;
+    padding: 1px;
+
+    font-size: 15px;
+  }
+  .Negocie1 {
+    color: var(---white);
+    padding: 7px;
 
     font-size: 15px;
   }
@@ -106,3 +112,4 @@
     filter: grayscale(1);
   }
 }
+

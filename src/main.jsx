@@ -14,6 +14,7 @@ import HomePosLogin from "./pages/HomePosLogin/HomePosLogin.jsx";
 import LifeClick from "./pages/LifeClick/LifeClick.jsx";
 import Planos from "./pages/Planos/Planos.jsx";
 import QuemSomos from "./pages/QuemSomos/QuemSomos.jsx";
+import CadAgendamentos from "./pages/CadAgendamentos/CadAgendamentos.jsx";
 import "./libs/i18n/configi18n.jsx";
 import "./index.css";
 
@@ -69,6 +70,10 @@ const router = createBrowserRouter([
   {
     path: "quemsomos",
     element: <QuemSomos />,
+  },
+  {
+    path: "cadAgendamentos",
+    element: <CadAgendamentos />,
   },
 ]);
 
