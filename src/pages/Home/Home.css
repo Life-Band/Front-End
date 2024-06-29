@@ -89,7 +89,7 @@
   color: var(--dark-blue);
   font-size: 1.4rem;
   font-weight: 500;
-  max-width: 45%;
+  width: 45%;
   text-align: center;
   line-height: normal;
   padding: 50px 20px;
@@ -274,7 +274,8 @@
 
 /*  Media Querys */
 
-@media screen and (max-width: 1368px) {
+@media screen and (max-width: 1372px) {
+  
   .initial-info {
     margin-top: 100px;
   }
@@ -283,7 +284,80 @@
     text-align: left;
     max-width: 650px;
   }
+  .about-title {
+    margin-top: 150px;
+  }
+  
+  .home-about {
+    margin-bottom: 70px;
+    gap: 0px;
+    
+  }
+  .home-benefit{
+    margin-top: 100px;
+  }
+  .benefit-cards{
+    column-gap: 2rem;
+  }
+
+  .about-button {
+  margin-bottom: 100px;
+  }
+  
 }
+
+@media screen and (max-width: 1300px) {
+  .home-benefit {
+    height: 1700px;
+    /* flex-direction: column; */
+  }
+  .benefit-cards{
+    flex-direction: column;
+    display: block;
+  }
+  .about-info img{
+    width: 45%;
+  }
+  .about-info{
+    margin-bottom: 50px;
+  }
+  .about-text p{
+    font-size: 1.2rem;
+  }
+  .benefit-card {
+    width: 450px;
+    height: 450px;
+    margin-bottom: 50px;
+  }
+
+  .Container-Service{
+    flex-direction: column;
+    margin-top: 100px;
+  }
+
+  .home-services {
+    height: 1700px;
+  }
+  .home-initial{
+    margin-bottom: 50px;
+  }
+  
+  footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+
+  div.footer-container h2 {
+    font-size: 40px;
+  }
+
+  div.footer-container a {
+    font-size: 30px;
+  }
+
+}
+
 
 @media screen and (max-width: 1150px) {
   .bracelet-btn {
@@ -300,6 +374,22 @@
     font-size: 2.8rem;
     max-width: 470px;
   }
+
+  .texts-feedback{
+    margin: 50px auto;
+  }
+  
+  div.texts-feedback p {
+    font-size: 1.5rem;
+    min-width: 100px;
+    margin: 0 20px;
+  }
+
+  .home-feedback .imageContainer {
+    width: 70%;
+    margin-left: 20px;
+  }
+  
 }
 
 @media screen and (max-width: 900px) {
@@ -311,7 +401,73 @@
     right: -1%;
     border-radius: 50px 0 0 50px;
   }
+  .about-info img{
+    display:none;
+  }
+  .home-initial{
+    margin-bottom: 50px;
+  }
+  
+  .about-title{
+    font-size: 4rem;
+    margin-top: 0px;
+    margin-bottom: 45px;
+  }
+  .home-about{
+    margin-bottom: 0px;
+  }
+  .about-button{
+    margin-bottom: 0px;
+  }
+  .home-benefit{
+    margin-top: 0px ;
+  }
+  
+  .home-feedback{
+    flex-direction: column-reverse;
+    height: 900px;
+  }
+  .texts-feedback{
+    margin: 50px auto;
+  }
+  .texts-feedback h2{
+    margin-bottom: 25px;
+  }
+  
+  div.texts-feedback p {
+    font-size: 1.9rem;
+    min-width: 300px;
+  }
+  
+  .home-feedback .imageContainer {
+    width: 75%;
+    margin-bottom: 30px;
+  }
+
+  a.maisInfo {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 20px;
+  }
+
+  .home-services {
+    height: 1750px;
+  }
+
+  .about-info img {
+    width: 30%;
 }
+
+  /* .initial-info h2 {
+    margin-top: 7rem;
+  } */
+
+  .Carrossel-Left .left-infos {
+    border: 1px solid red;
+  }
+
+}
+
 
 @media screen and (max-width: 640px) {
   .bracelet-btn {
@@ -342,6 +498,45 @@
     left: 50%;
     transform: translateX(-50%);
   }
+
+}
+
+@media screen and (max-width: 428px){
+  .texts-feedback h2{
+    font-size: 2rem;
+  }
+  .benefit-card{
+    width: 350px;
+    height: 450px;
+  }
+  .benefit-card h4 {
+    font-size: 1.5rem;
+  }
+  .benefit-card p{
+    font-size: .9rem;
+  }
+  
+  .home-services{
+    height: 1600px;
+  }
+
+  .services-title{
+    margin-top: 50px;
+  }
+  .Container-Service{
+    gap:40px;
+  }
+  .about-text{
+    padding: 30px 15px;
+    width: 90%;
+  }
+  .about-text p{
+    font-size: .9rem;
+  }
+ 
+
+
+  
 }
 
 @media screen and (max-width: 375px) {
