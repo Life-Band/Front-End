@@ -1,5 +1,6 @@
 import "./Header.css";
 import Logo from "../../assets/HeaderAssets/Logo.png";
+import Close from "../../assets/HeaderAssets/Close.png";
 import Beacons from "../../assets/HeaderAssets/Beacons.png";
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
@@ -11,6 +12,9 @@ function Header(props) {
   const [on, setOn] = useState("socialIconOff");
   const [menuText, setMenuText] = useState("menuTextOff");
   const [barrabrancaVisible, setbarrabrancaVisible] = useState(props.use);
+  const [bgModal, setBgModal] = useState("Modal_EmergenciaOFF");
+  const [modalOpen, setModalOpen] = useState("Modal_NumEmergenciaOFF");
+
   return (
     <header>
       <div className="left-elements">
@@ -50,9 +54,8 @@ function Header(props) {
             type="button"
             className="openSOS"
             onClick={() => {
-              setClick("");
-              setOn("");
-              setMenuText("");
+              setBgModal("Modal_Emergencia");
+              setModalOpen("Modal_NumEmergencia");
             }}
           >
             <i
@@ -123,6 +126,61 @@ function Header(props) {
             </a>
             <a href="https://beacons.ai/lifeband" target="_blank">
               <img src={Beacons} className="beacons-icon" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div className={bgModal}>
+        <div className={modalOpen}>
+          <button
+            className="Modal_Close"
+            onClick={() => {
+              setModalOpen("Modal_NumEmergenciaOFF");
+
+              setTimeout(() => {
+                setBgModal("Modal_EmergenciaOFF");
+              }, 1000); // 1000 milissegundos = 1 segundo
+            }}
+          >
+            <img src={Close} />
+          </button>
+          <h2>NUMEROS DE EMERGÊNCIA</h2>
+
+          <div className="Modal_Row">
+            <a href="tel:190">
+              <h3>190</h3>
+              <p>POLÍCIA MILITAR</p>
+            </a>
+            <a href="tel:191">
+              <h3>191</h3>
+              <p>POLÍCIA RODOVIÁRIA FEDERAL</p>
+            </a>
+            <a href="tel:192">
+              <h3>192</h3>
+              <p>SAMU</p>
+            </a>
+          </div>
+
+          <div className="Modal_Row">
+            <a href="tel:181">
+              <h3>181</h3>
+              <p>POLÍCIA CIVIL</p>
+            </a>
+            <a href="tel:198">
+              <h3>198</h3>
+              <p>POLÍCIA MILITAR RODOVIÁRIA</p>
+            </a>
+            <a href="tel:199">
+              <h3>199</h3>
+              <p>DEFESA CIVIL</p>
+            </a>
+          </div>
+
+          <div className="Modal_Row">
+            <a href="tel:193">
+              <h3>193</h3>
+              <p>BOMBEIROS</p>
             </a>
           </div>
         </div>
