@@ -1,136 +1,236 @@
 .Bg-CadAgendamentos {
-    width: 100vw;
-    height: 100vh;
-    background: var(--dark-blue);
-    background-size: cover;
-    background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  background: var(--dark-blue);
+  background-size: cover;
+  background-repeat: no-repeat;
 
-    position: relative;
+  position: relative;
 }
 
 .offAgenda {
-    display: none;
+  display: none;
 }
 
-.cardFacaAgend{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.cardFacaAgend {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    margin: 0 auto;
-    margin-top: 50px;
-    width: 80vw;
-    height: 75vh;
-    border-radius: 5vw;
-    background-color: var(--white-blue);
-    padding: 7vh 5vw;
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 80vw;
+  height: 78vh;
+  border-radius: 5vw;
+  background-color: var(--white-blue);
+  padding: 7vh 5vw;
 
-    h2{
-        color: var(--dark-blue);
-        font-weight: 500;
-        font-size: 3vw;
-    }
+  h2 {
+    color: var(--dark-blue);
+    font-weight: 500;
+    font-size: 3vw;
+  }
 }
 
 .topCadAgendamentos {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
-.confirmarAgendamento{
-    position: absolute;
-    bottom: 4vh;
-    width: 20vw;
-    height: 6vh;
-    font-size: 1.4vw;
-    border-radius: 1vw;
-    border: none;
-    background-color: var(--dark-blue);
-    opacity: 0.5;
-    color: #fff;
-    
-    transition: color 0.40s ease-in-out, background 0.40s ease-in-out, border 0.40s ease-in-out, scale 0.1s ease-in-out;
+.confirmarAgendamento {
+  position: absolute;
+  bottom: 4vh;
+  width: 20vw;
+  height: 6vh;
+  font-size: 1.4vw;
+  border-radius: 1vw;
+  border: none;
+  background-color: var(--dark-blue);
+  opacity: 0.5;
+  color: #fff;
 
-    &:hover{
-        color: var(--dark-blue);
-        background: var(--white-blue);
-        border: 1px solid var(--dark-blue);
-    }
+  transition: color 0.4s ease-in-out, background 0.4s ease-in-out,
+    border 0.4s ease-in-out, scale 0.1s ease-in-out;
 
-    &:active{
-        scale: 0.95;
-    }
+  &:hover {
+    color: var(--dark-blue);
+    background: var(--white-blue);
+    border: 1px solid var(--dark-blue);
+  }
+
+  &:active {
+    scale: 0.95;
+  }
 }
 
 .btnCadAgendamentos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: var(--white);
-    width: 25vw;
-    border-radius: 3vw;
-    padding: 1.9vw;
-    height: 7vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--white);
+  width: 25vw;
+  border-radius: 3vw;
+  padding: 1.9vw;
+  height: 7vh;
 }
 
 .btnCadAgendamentosOpen {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: var(--white);
-    width: 25vw;
-    border-radius: 3vw;
-    padding: 1.9vw;
-    height: 30vh;
-    gap: 2vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--white);
+  width: 25vw;
+  border-radius: 3vw;
+  padding: 1.9vw;
+  height: 30vh;
+  gap: 2vh;
 }
 
-.optionsCadAgendamentos{
-    display: flex;
-    align-items: center;
-    gap: 1vw;
-    width: 100%;
+.optionsCadAgendamentos {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  width: 100%;
 
-    &:hover {
-        button{
-            opacity: 0.7;
-        }
-    
-        i {
-            opacity: 0.5;
-            transform: rotateZ(0deg);
-        }
-    }
-
-    button{
-        border: none;
-        background: transparent;
-        color: #000;
-        opacity: 0.6;
-        font-size: 1.5vw;
-        transition: all 0.4s ease-in-out;
+  &:hover {
+    button {
+      opacity: 0.7;
     }
 
     i {
-        color: #000;
-        opacity: 0.4;
-        font-size: 1.5vw;
-        transform: rotateZ(90deg);
-        transition: all 0.4s ease-in-out;
+      opacity: 0.5;
+      transform: rotateZ(0deg);
     }
-}
+  }
 
-.optionCadAgendamentos {
+  button {
     border: none;
     background: transparent;
     color: #000;
-    opacity: 0.4;
+    opacity: 0.6;
     font-size: 1.5vw;
     transition: all 0.4s ease-in-out;
-    width: 100%;
-    text-align: left;
+  }
+
+  i {
+    color: #000;
+    opacity: 0.4;
+    font-size: 1.5vw;
+    transform: rotateZ(90deg);
+    transition: all 0.4s ease-in-out;
+  }
+}
+
+.optionCadAgendamentos {
+  border: none;
+  background: transparent;
+  color: #000;
+  opacity: 0.4;
+  font-size: 1.5vw;
+  transition: all 0.4s ease-in-out;
+  width: 100%;
+  text-align: left;
+}
+
+.cadAgendamentos-InputContainer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 72vw;
+  margin: auto;
+  gap: 4vh;
+
+  bottom: 15vh;
+}
+
+.cadAgendamentos-InputRow {
+  width: 100%;
+  display: flex;
+  gap: 3vw;
+}
+
+.cadAgendamentos-InputBox {
+  position: relative;
+  display: flex;
+  width: 22vw;
+  align-items: center;
+  justify-content: center;
+  background: var(--white);
+  border-radius: 1vw;
+  padding: 2.5vh 1vw;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 4.1vw;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #00000060;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 60%; /* ajuste conforme necessário */
+  }
+
+  img {
+    width: 2.5vw;
+    position: relative;
+  }
+
+  input {
+    width: 16vw;
+    background: transparent;
+    border: none;
+    outline: none;
+    margin-left: 35px; /* ajuste conforme necessário */
+    font-size: 1.3vw;
+    color: #00000080;
+  }
+}
+
+.cadAgendamentos-InputArea {
+  width: 100%;
+
+  textarea {
+    width: 22vw;
+    height: 15vh;
+    align-items: center;
+    justify-content: center;
+    background: var(--white);
+    border-radius: 1vw;
+    border: none;
+    padding: 2.5vh 1vw;
+    font-size: 1vw;
+    resize: none;
+    color: #00000080;
+
+    scrollbar-width: thin;
+    scrollbar-color: #fff transparent;
+
+    &::placeholder {
+      height: 80%;
+      width: 90%;
+      text-align: center;
+      position: absolute;
+    }
+
+    &::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #ffffff;
+      border-radius: 4px;
+    }
+  }
 }
