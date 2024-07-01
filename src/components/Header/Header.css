@@ -467,6 +467,40 @@ header button:hover {
     }
   }
 }
+@media screen and (max-width: 992px) {
+  .Modal_NumEmergencia {
+    width: 80vw;
+  }
+  .Modal_NumEmergencia .Modal_Row{
+    width: 65vw;
+  }
+  .Modal_NumEmergencia h2{
+    font-size: 3.9vw;
+  }
+  .Modal_NumEmergencia .Modal_Row a h3 {
+    font-size: 3.2vw;
+  }
+  .Modal_NumEmergencia .Modal_Row a p{
+    font-size: 2vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .Modal_NumEmergencia {
+    width: 90vw;
+  }
+  .Modal_NumEmergencia h2{
+    font-size: 4.5vw;
+  }
+  .Modal_NumEmergencia .Modal_Row{
+    width: 80vw;
+  }
+  .Modal_NumEmergencia .Modal_Row a h3 {
+    font-size: 5vw;
+  }
+  .Modal_NumEmergencia .Modal_Row a p{
+    font-size: 2.3vw;
+  }
+}
 
 @media screen and (max-width: 530px) {
   .inputIndex {
@@ -505,5 +539,11 @@ header button:hover {
 
   nav {
     display: none;
+  }
+  .Modal_NumEmergencia .Modal_Row a h3 {
+    font-size: 5vw;
+  }
+  .Modal_NumEmergencia .Modal_Row a p{
+    font-size: 2.7vw;
   }
 }
