@@ -73,7 +73,7 @@ function HeaderLogin() {
           <nav className="nav-header">
             <h2>
               <img src={Logo} />
-              <a href="#">Inicio</a>
+              <a href="/poslogin">Inicio</a>
             </h2>
             <h2>
               <img src={Perfil} />
