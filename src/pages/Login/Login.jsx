@@ -5,11 +5,44 @@ import FirstKit from "../../assets/LoginAssets/FirstKit.png";
 import Arrow from "../../assets/LoginAssets/Seta.png";
 import EyeSlash from "../../assets/LoginAssets/Eye-Slash.png";
 import Eye from "../../assets/CadastroAssets/Eye.png";
-import { Link } from "react-router-dom";
+import { Link, useRoutes } from "react-router-dom";
+import useSession from "../../hooks/use-session";
 
 function Login() {
   const [viewPassword, setViewPassword] = useState("password");
   const [switchEye, setSwitchEye] = useState(EyeSlash);
+  const [email, setEmail] = useState("");
+  const [senha, setSenha] = useState("");
+  const [cpf, setCpf] = useState("");
+
+  const { login } = useSession();
+  const router = useRoutes([
+    {
+      path: "/HomePosLogin",
+    }
+  ]);
+
+  async function submitForm() {
+      const email = email;
+      const password = senha;
+      const cpf = cpf;
+
+      login({ email, password, cpf }, {
+        optimisticData: {
+          email,
+          password,
+          cpf
+        },
+      }).then((resp) => {
+        if (resp.data.accessToken){
+          router.replace("/HomePosLogin");
+          return;
+        }
+      }).catch((error) => {
+        const errorMessage = error.toString().split(": ")[1];
+        console.error(`${errorMessage}`);
+      });
+  }
 
   return (
     <main className="main-container">
@@ -32,8 +65,9 @@ function Login() {
               <input
                 className="input-name"
                 type="text"
-                placeholder="Nome"
+                placeholder="Email"
                 required
+                onChange={(e) => setEmail(e.target.value)}
               />
             </div>
             <div className="inputs-boxes">
@@ -43,6 +77,7 @@ function Login() {
                   type={viewPassword}
                   placeholder="Senha"
                   required
+                  onChange={(e) => setSenha(e.target.value)}
                 />
                 <button
                   className="eye-slash"
@@ -65,15 +100,18 @@ function Login() {
                 placeholder="CPF"
                 maxLength="11"
                 required
+                onChange={(e) => setCpf(e.target.value)}
               />
             </div>
             <Link to = "/posLogin">
-            <button className="input-btn" type="submit">
+            <button className="input-btn" type="submit" onClick={() => submitForm()}>
               Entrar
             </button>
             </Link>
           </div>
         </div>
+      </div>
+      <div>
       </div>
     </main>
   );
