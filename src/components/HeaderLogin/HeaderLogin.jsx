@@ -66,7 +66,7 @@ function HeaderLogin() {
             <img src={Profile} alt="User Profile" />
             <div>
               <span>Seja bem-vindo</span>
-              <h2>JOHN DOE</h2>
+              <h2>JUNIOR WILLIAN</h2>
             </div>
           </div>
 
@@ -85,7 +85,7 @@ function HeaderLogin() {
             </h2>
             <h2>
               <img src={Agenda} />
-              <a href="#">Agenda</a>
+              <a href="/cadAgendamentos">Agenda</a>
             </h2>
             <h2>
               <img src={Pulseira} />
