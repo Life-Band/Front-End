@@ -34,7 +34,7 @@ function HeaderLogin() {
             <a href="/cadAgendamentos">{t("Agendamentos")}</a>
           </span>
           <span>
-            <a href="/pulseira">{t("Pulseira")}</a>
+            <a href="/lifeClick">{t("Pulseira")}</a>
           </span>
         </nav>
       </div>
@@ -89,7 +89,7 @@ function HeaderLogin() {
             </h2>
             <h2>
               <img src={Pulseira} />
-              <a href="#">Pulseira</a>
+              <a href="/lifeClick">Pulseira</a>
             </h2>
 
             <h3>
