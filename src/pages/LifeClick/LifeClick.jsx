@@ -2,9 +2,9 @@ import React from "react";
 import "./LifeClick.css";
 import HeaderLogin from "../../components/HeaderLogin/HeaderLogin";
 import NotificacaoPulseira from "../../components/NotificacaoPulseira/NotificacaoPulseira";
-import ProfileJohn from "../../assets/LifeClickAssets/ProfileJohn.png";
-import ProfileJane from "../../assets/LifeClickAssets/ProfileJane.png";
-import ProfileMayk from "../../assets/LifeClickAssets/ProfileMayk.png";
+import ProfileDaniel from "../../assets/LifeClickAssets/ProfileJohn.png";
+import ProfileGiulia from "../../assets/LifeClickAssets/ProfileJane.png";
+import ProfileMarcos from "../../assets/LifeClickAssets/ProfileMayk.png";
 import Manutencao from "../../assets/LifeClickAssets/Wrench.png";
 import Attention from "../../assets/LifeClickAssets/Attention.png";
 import Warning from "../../assets/LifeClickAssets/Warning.png";
@@ -17,8 +17,8 @@ function LifeClick() {
         <h2 className="lifeClick-Title">LIFE BAND CLICK</h2>
 
         <NotificacaoPulseira
-          profileUser={ProfileJohn}
-          nameUser="JOHN DOE"
+          profileUser={ProfileDaniel}
+          nameUser="DANIEL DA SILVA"
           iconNotification={Manutencao}
           dateNotification="23/06"
           statusNotification="MANUTENÇÃO"
@@ -26,8 +26,8 @@ function LifeClick() {
         />
 
         <NotificacaoPulseira
-          profileUser={ProfileJane}
-          nameUser="JANE DOE"
+          profileUser={ProfileGiulia}
+          nameUser="GIULIA LOPES"
           iconNotification={Warning}
           dateNotification="15:30"
           statusNotification="ABERTO"
@@ -35,8 +35,8 @@ function LifeClick() {
         />
 
         <NotificacaoPulseira
-          profileUser={ProfileMayk}
-          nameUser="MAYK DOE"
+          profileUser={ProfileMarcos}
+          nameUser="MARCOS SOUZA"
           iconNotification={Attention}
           dateNotification="15:20"
           statusNotification="NO&nbsp;HOSPITAL"
