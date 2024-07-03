@@ -34,7 +34,7 @@ function HeaderLogin() {
             <a href="/cadAgendamentos">{t("Agendamentos")}</a>
           </span>
           <span>
-            <a href="/pulseira">{t("Pulseira")}</a>
+            <a href="/lifeClick">{t("Pulseira")}</a>
           </span>
         </nav>
       </div>
@@ -66,14 +66,14 @@ function HeaderLogin() {
             <img src={Profile} alt="User Profile" />
             <div>
               <span>Seja bem-vindo</span>
-              <h2>JOHN DOE</h2>
+              <h2>JUNIOR WILLIAN</h2>
             </div>
           </div>
 
           <nav className="nav-header">
             <h2>
               <img src={Logo} />
-              <a href="#">Inicio</a>
+              <a href="/poslogin">Inicio</a>
             </h2>
             <h2>
               <img src={Perfil} />
@@ -85,11 +85,11 @@ function HeaderLogin() {
             </h2>
             <h2>
               <img src={Agenda} />
-              <a href="#">Agenda</a>
+              <a href="/cadAgendamentos">Agenda</a>
             </h2>
             <h2>
               <img src={Pulseira} />
-              <a href="#">Pulseira</a>
+              <a href="/lifeClick">Pulseira</a>
             </h2>
 
             <h3>
