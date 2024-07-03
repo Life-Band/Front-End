@@ -1,7 +1,7 @@
 import useSWR from "swr";
 import useSWRMutation from "swr/mutation";
 
-const URL_BACKEND = "https://0583-2804-14c-bf34-8dde-c192-7317-31cb-fd52.ngrok-free.app/api";
+const URL_BACKEND = "https://bfdd-2804-14c-bf34-8dde-f46a-a0f-38c-e813.ngrok-free.app/api";
 
 async function fetcher(url: string) {
     const resp = await fetch(`${url}/users`, {

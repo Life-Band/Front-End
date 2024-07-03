@@ -25,7 +25,7 @@ function HeaderLogin() {
             <a href="/posLogin">{t("Inicio")}</a>
           </span>
           <span>
-            <a href="/primeirossocorros">{t("Videos")}</a>
+            <a href="/videosps">{t("Videos")}</a>
           </span>
           <span>
             <a href="/zuri">{t("Zuri")}</a>
